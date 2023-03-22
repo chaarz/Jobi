@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import JobList from './components/JobList';
+import ErrorPage from './components/ErrorPage';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/jobList" element={<JobList />} />
-        {/* <Route path="*" element={<ErrorPage />} />  */}
+        <Route path="*" element={<ErrorPage />} /> 
       </Routes>
 
       <Footer/>
