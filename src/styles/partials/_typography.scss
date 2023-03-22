@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+html {
+    font-size: 125%;
+}
+
+body{
+    font-size: $baseFontSize;
+    color: $primaryColour;
+    // background-color: $secondaryColour;
+    // line-height: 1.2rem;
+    // letter-spacing: 1.2px;
+}
