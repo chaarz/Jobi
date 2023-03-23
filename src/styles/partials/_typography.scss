@@ -1,10 +1,23 @@
 @use "variables" as *;
 
+@font-face {
+    font-family: "gorditaRegular";
+    src: url('../fonts/gordita/gorditaRegular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "gorditaMedium";
+    src: url('../fonts/gordita/gorditaMedium.otf');
+    font-weight: 500;
+}
+
 html {
     font-size: 125%;
 }
 
 body{
+    font-family: $bodyFont;
     font-size: $baseFontSize;
     color: $primaryColour;
     // background-color: $secondaryColour;
