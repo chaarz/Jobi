@@ -24,3 +24,15 @@ body{
     // line-height: 1.2rem;
     // letter-spacing: 1.2px;
 }
+
+a{
+    font-size: 0.8rem;
+    color: $secondaryColour;
+}
+
+h1{
+    font-family: $headingFont;
+    font-size: 4rem;
+    font-weight: 500;
+    color: $secondaryColour;
+}

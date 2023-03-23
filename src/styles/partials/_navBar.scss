@@ -1,2 +1,18 @@
 @use 'variables' as *;
 
+.navBar{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktopNav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    ul{
+        display: flex;
+        gap: 2rem;
+    }
+}

@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            <h1>Most Complete job portal</h1>
+            <p>Most Complete job portal</p>
         </footer>
     )
   }
