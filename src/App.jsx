@@ -10,7 +10,7 @@ import ErrorPage from './components/ErrorPage';
 
 function App() {
   return (
-    <div className= "wrapper">
+    <div>
       <Header/>
 
       <Routes>

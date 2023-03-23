@@ -1,9 +1,12 @@
 import { NavLink} from 'react-router-dom';
+import images from './images';
 
 const NavBar = () => {
     return (
         <nav>
-            <div className='logo'>Jobi</div>
+            <div className='logo'>
+                <img src={images.jobiLogo} alt="Jobi logo" />
+            </div>
             <ul className='navMenu'>
                 <li>
                     <NavLink to="/">Home</NavLink>

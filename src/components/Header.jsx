@@ -3,8 +3,10 @@ import NavBar from "./NavBar";
 const Header = () => {
     return (
         <header>
-            <NavBar/>
-            <h1>Welcome to Jobi</h1>
+            <div className= "wrapper">
+                <NavBar/>
+                <h1>Find & Hire Experts for any job</h1>
+            </div>
         </header>
     )
   }
