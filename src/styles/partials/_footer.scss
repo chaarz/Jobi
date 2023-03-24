@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+footer{
+    .bottomFooter{
+        display: flex;
+        justify-content: space-between;
+    }
+}
