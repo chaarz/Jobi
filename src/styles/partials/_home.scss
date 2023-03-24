@@ -9,3 +9,47 @@
         align-items: center;
     }
 }
+
+.categories{
+    .categoryHeading{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            font-size: 1.6rem;
+        }
+        a{
+            color: $primaryColour;
+            text-decoration: underline;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        .category{
+            padding: .75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 2rem;
+            background-color: #EAFBFD;
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        .category2{
+            background-color: #FFFAEC;
+        }
+        .category3{
+            background-color: #FFEBFB;
+        }
+        .category4{
+            background-color: #E8F7E9;
+        }
+        .category5{
+            background-color: #F7F5FF;
+        }
+        .category6{
+            background-color: #FFF3EA;
+        }
+    }
+}
