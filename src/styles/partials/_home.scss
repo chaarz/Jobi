@@ -12,6 +12,7 @@
 
 .categories{
     .categoryHeading{
+        margin-bottom: 2rem;
         display: flex;
         justify-content: space-between;
         h2{
@@ -50,6 +51,32 @@
         }
         .category6{
             background-color: #FFF3EA;
+        }
+    }
+}
+
+.trending{
+    .trendingHeading{
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: calc((100%/4) - 3%);
+            margin: 1.5%;
+            position: relative;
+        }
+        p{
+            color: $secondaryColour;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 0;
+            // width: 90%;
+            padding: 1rem;
         }
     }
 }

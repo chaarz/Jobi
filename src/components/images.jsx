@@ -11,5 +11,9 @@ import marketing from '../assets/marketing.png';
 import telemarketing from '../assets/telemarketing.png';
 import accounting from '../assets/accounting.png';
 import editing from '../assets/editing.png';
+import wordpressDevelopment from '../assets/wordpress-development.jpg';
+import backArrow from '../assets/back-arrow-icon-black.png';
+import nextArrow from '../assets/next-arrow-icon.png';
 
-export default { jobiLogo, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing }
+
+export default { jobiLogo, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, backArrow, nextArrow }

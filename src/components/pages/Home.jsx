@@ -1,4 +1,4 @@
-import images from './Images';
+import images from '../Images';
 
 const Home = () => {
     return (
@@ -68,6 +68,37 @@ const Home = () => {
                             <img src={images.editing} alt="editing icon" aria-hidden='true'/>
                             <p>Editing</p>
                         </div>
+                    </li>
+                </ul>
+            </section>
+            <section className='trending wrapper'>
+                <div className='trendingHeading'>
+                    <h2>Trending Jobs</h2>
+                    <div>
+                        <button>
+                            <img src={images.backArrow} alt="back arrow" />
+                        </button>
+                        <button>
+                            <img src={images.nextArrow} alt="next arrow" />
+                        </button>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <p>Wordpress Development</p>
+                    </li>
+                    <li>
+                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <p>Audio & Video Editing</p>
+                    </li>
+                    <li>
+                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <p>Product & Branding Design</p>
+                    </li>
+                    <li>
+                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <p>Admin & Customer Support</p>
                     </li>
                 </ul>
             </section>

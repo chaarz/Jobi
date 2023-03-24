@@ -4,9 +4,9 @@ import {
   Route } from 'react-router-dom';
 import Header from './components/sections/Header';
 import Footer from './components/sections/Footer';
-import Home from './components/Home';
-import JobList from './components/JobList';
-import ErrorPage from './components/ErrorPage';
+import Home from './components/pages/Home';
+import JobList from './components/pages/JobList';
+import ErrorPage from './components/pages/ErrorPage';
 
 function App() {
   return (
