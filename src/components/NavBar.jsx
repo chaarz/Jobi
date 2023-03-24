@@ -3,7 +3,7 @@ import images from './Images';
 
 const NavBar = () => {
     return (
-        <div class='navBar'>
+        <div className='navBar'>
             <div className='logo'>
                 <img src={images.jobiLogo} alt="Jobi logo" />
             </div>

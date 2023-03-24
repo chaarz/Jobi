@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <main>
             <section className='partners'>
-                <ul class='wrapper'>
+                <ul className='wrapper'>
                     <li>
                         <img src={images.google} alt="Google logo" />
                     </li>
@@ -26,7 +26,7 @@ const Home = () => {
                 </ul>
             </section>
             <section className='categories wrapper'>
-                <div class='categoryHeading'>
+                <div className='categoryHeading'>
                     <h2>Most in demand categories</h2>
                     <a href="#">Explore all categories
                        {'>'}
