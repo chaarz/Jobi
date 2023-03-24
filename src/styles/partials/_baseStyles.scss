@@ -8,16 +8,21 @@
 
 button{
     // margin-top: 1.5rem;
-    // color: $primaryColour;
-    // background-color: $secondaryColour;
-    // padding: 15px 15px 10px 15px;
-    // border: 2px solid $primaryColour;
-    // cursor: pointer;
+    color: $secondaryColour;
+    background-color: $quaternaryColour;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
     // transition: 0.3s;
     // &:hover, &:focus{
     //     color: $secondaryColour;
     //     background-color: $primaryColour;
     // }
+    &.loginBtn{
+        border: 1px solid $secondaryColour;
+        background-color: unset;
+    }
 }
 
 img{
@@ -49,3 +54,22 @@ input {
     padding: 0;
     margin: 0;
   }
+
+label{
+    padding-bottom: .5rem;
+}
+
+input{
+    border:none;
+    &:hover, &:focus{
+    border-bottom: 2px solid $quaternaryColour;
+    }
+}
+
+select{
+    border: none;
+    background-color: unset;
+    &:hover, &:focus{
+        color: $quaternaryColour;
+    }
+}

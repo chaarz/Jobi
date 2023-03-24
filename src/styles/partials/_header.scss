@@ -15,10 +15,36 @@ header{
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 2rem;
         }
+    }
+    p{
+        color: $secondaryColour;
     }
 }
 
-form{
-    display: flex;
+.searchFormContainer{
+    border-radius: .5rem;
+    background-color: $secondaryColour;
+    form{
+        display: flex;
+        .flexContainer{
+            padding: 1rem 0;
+            display: flex;
+            .searchForm{
+                padding: 0 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .category{
+                border-left: 1px solid $grey;
+            }
+        }
+        button{
+            border: none;
+            border-radius: 0 .5rem .5rem 0;
+            padding: 0.5rem 2rem;
+        }
+    }
 }

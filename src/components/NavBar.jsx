@@ -25,8 +25,8 @@ const NavBar = () => {
                         <NavLink to="/">Pages</NavLink>
                     </li>
                 </ul>
-                <div>
-                    <button>Login/Sign up</button>
+                <div className="navButtons">
+                    <button className='loginBtn'>Login/Sign up</button>
                     <button>Post a job</button>
                 </div>
             </nav>

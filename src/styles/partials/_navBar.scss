@@ -13,9 +13,14 @@
 .desktopNav{
     display: flex;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 7rem;
     ul{
         display: flex;
-        gap: 1.2rem;
+        align-items: center;
+        gap: 2rem;
+    }
+    .navButtons{
+        display: flex;
+        gap: 0.5rem;
     }
 }

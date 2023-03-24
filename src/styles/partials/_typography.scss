@@ -16,11 +16,11 @@ html {
     font-size: 125%;
 }
 
-body, input, button {
+body, button, input, select {
     font-family: $bodyFont;
     font-size: $baseFontSize;
     color: $primaryColour;
-    // background-color: $secondaryColour;
+    background-color:unset;
     line-height: 1.2;
     letter-spacing: 1.2px;
 }
@@ -33,7 +33,7 @@ a{
 h1{
     font-family: $headingFont;
     font-size: 3.6rem;
-    font-weight: 500;
+    font-weight: normal;
     color: $secondaryColour;
 }
 
@@ -43,6 +43,13 @@ h2{
     font-weight: 400;
 }
 
+label{
+    color: $grey;
+    font-size: 0.8rem;
+    
+}
+
 footer p{
     font-size: 1.2rem;
 }
+
