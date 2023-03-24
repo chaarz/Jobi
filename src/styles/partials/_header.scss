@@ -2,4 +2,22 @@
 
 header{
     background-color: $tertiaryColour;
+    .heading{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        .headerTextContainer{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+form{
+    display: flex;
 }

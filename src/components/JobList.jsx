@@ -1,7 +1,7 @@
 const JobList = () => {
     return (
         <section>
-            <h1>This is the Job List page!</h1>
+            <p>This is the Job List page!</p>
         </section>
     )
   }

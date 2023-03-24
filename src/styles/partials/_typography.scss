@@ -16,13 +16,13 @@ html {
     font-size: 125%;
 }
 
-body{
+body, input, button {
     font-family: $bodyFont;
     font-size: $baseFontSize;
     color: $primaryColour;
     // background-color: $secondaryColour;
-    // line-height: 1.2rem;
-    // letter-spacing: 1.2px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
 }
 
 a{
@@ -32,7 +32,17 @@ a{
 
 h1{
     font-family: $headingFont;
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 500;
     color: $secondaryColour;
+}
+
+h2{
+    font-family: $headingFont;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+footer p{
+    font-size: 1.2rem;
 }
