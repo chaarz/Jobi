@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import images from './Images';
 
 const Header = () => {
     return (

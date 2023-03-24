@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+.partners{
+    background-color: #F7F7F7;
+    padding: 1rem 0;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
