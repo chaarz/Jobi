@@ -19,9 +19,13 @@ button{
     //     color: $secondaryColour;
     //     background-color: $primaryColour;
     // }
-    &.loginBtn{
+    &.loginBtn, &.lookingBtn{
         border: 1px solid $secondaryColour;
         background-color: unset;
+        &.lookingBtn{
+            border: 1px solid $quaternaryColour;
+            color: $quaternaryColour
+        }
     }
 }
 
@@ -56,10 +60,6 @@ p,
 input {
     padding: 0;
     margin: 0;
-}
-
-h2{
-
 }
 
 label{

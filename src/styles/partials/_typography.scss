@@ -25,6 +25,10 @@ body, button, input, select {
     letter-spacing: 1.2px;
 }
 
+button{
+    font-size: 0.8rem;
+}
+
 a{
     font-size: 0.8rem;
     color: $secondaryColour;
@@ -47,6 +51,10 @@ label{
     color: $grey;
     font-size: 0.8rem;
     
+}
+
+footer h2{
+    color: $secondaryColour;
 }
 
 footer p{

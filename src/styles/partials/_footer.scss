@@ -1,6 +1,33 @@
 @use 'variables' as *;
 
 footer{
+    .upperFooter{
+        padding: 3rem 0;
+        background-color: $tertiaryColour;
+        p{
+            color: $secondaryColour;
+        }
+    }
+    .flexContainer{
+        display: flex;
+        justify-content: space-between;
+        .headingContainer{
+            flex: .75;
+        }
+        .flexTextContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .flexBtnContainer{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .mainFooter{
+        // background-color: $tertiaryColour;
+    }
     .bottomFooter{
         display: flex;
         justify-content: space-between;
