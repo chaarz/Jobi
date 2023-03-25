@@ -26,7 +26,20 @@ footer{
     }
 
     .mainFooter{
-        // background-color: $tertiaryColour;
+        .footerFlexContainer{
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            ul li{
+                padding-bottom: 1rem;
+            }
+            .newsletter form{
+                margin: 1rem 0;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                background-color: $lightGrey;
+            }
+        }
     }
     .bottomFooter{
         display: flex;

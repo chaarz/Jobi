@@ -1,4 +1,5 @@
 import jobiLogo from '../assets/jobi-logo.png';
+import jobiLogoBlack from '../assets/jobi-logo-black.png'
 import google from '../assets/google.png';
 import shipbob from '../assets/shipbob.png';
 import dribbble from '../assets/dribbble.png';
@@ -16,4 +17,4 @@ import backArrow from '../assets/back-arrow-icon-black.png';
 import nextArrow from '../assets/next-arrow-icon.png';
 
 
-export default { jobiLogo, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, backArrow, nextArrow }
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, backArrow, nextArrow }
