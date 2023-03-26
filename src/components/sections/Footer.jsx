@@ -1,4 +1,6 @@
 import Images from "../Images";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -85,7 +87,7 @@ const Footer = () => {
                             <h3>Newsletter</h3>
                             <p>Join & receive important updates</p>
                             <form action='#'>
-                                <label htmlFor="email" class='sr-only'>Enter your email</label>
+                                <label htmlFor="email" className='sr-only'>Enter your email</label>
                                 <input type="email" id="email" name="email" placeholder="Enter your email" required/>
                                 <button type='submit'>Send</button>
                             </form>
@@ -96,6 +98,11 @@ const Footer = () => {
                         <a href="#">Privacy & Terms</a>
                         <a href="#">Contact Us</a>
                         <p>Copyright @2023 jobi inc.</p>
+                        <div>
+                            <FontAwesomeIcon icon={faFacebookF} />
+                            <FontAwesomeIcon icon={faInstagram} />
+                            <FontAwesomeIcon icon={faPinterestP} />
+                        </div>
                     </div>
             </div>
         </footer>
