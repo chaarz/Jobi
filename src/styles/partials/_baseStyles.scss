@@ -87,3 +87,11 @@ select{
         color: $quaternaryColour;
     }
 }
+
+.highlight{
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        color: $quaternaryColour;
+    }
+}

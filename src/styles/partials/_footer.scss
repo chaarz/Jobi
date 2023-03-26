@@ -33,16 +33,32 @@ footer{
             ul li{
                 padding-bottom: 1rem;
             }
-            .newsletter form{
-                margin: 1rem 0;
-                padding: 0.5rem 1rem;
-                border-radius: 0.5rem;
-                background-color: $lightGrey;
+            .newsletter {
+                form{
+                    margin: 1rem 0;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    background-color: $lightGrey;
+                }
+                .note{
+                    color: $grey;
+                    font-size: 0.7rem;
+                }
             }
         }
     }
+
     .bottomFooter{
         display: flex;
         justify-content: space-between;
+        .flexContainer{
+            display: flex;
+            gap: 1rem;
+            font-weight: 600;
+        }
+        .socialIcons{
+            display: flex;
+            gap: 1rem;
+        }
     }
 }

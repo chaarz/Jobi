@@ -34,6 +34,11 @@ a{
     color: $secondaryColour;
 }
 
+main a {
+    color: $primaryColour;
+    text-decoration: underline;
+}
+
 h1{
     font-family: $headingFont;
     font-size: 3.6rem;
@@ -68,4 +73,8 @@ footer p{
 
 footer a{
     color: $primaryColour;
+}
+
+.icon{
+    font-size: 1rem;
 }
