@@ -1,4 +1,4 @@
-import images from '../Images';
+import images from '../images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 
