@@ -10,19 +10,19 @@ const NavBar = () => {
             <nav className='desktopNav'>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/" className='highlight'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/JobList">Jobs</NavLink>
+                        <NavLink to="/JobList" className='highlight'>Jobs</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Explore</NavLink>
+                        <NavLink to="/" className='highlight'>Explore</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Category</NavLink>
+                        <NavLink to="/" className='highlight'>Category</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/">Pages</NavLink>
+                        <NavLink to="/" className='highlight'>Pages</NavLink>
                     </li>
                 </ul>
                 <div className="navButtons">
