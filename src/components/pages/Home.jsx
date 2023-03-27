@@ -89,15 +89,15 @@ const Home = () => {
                         <p>Wordpress Development</p>
                     </li>
                     <li>
-                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <img src={images.audioEditing} alt="man writing with headsets on" />
                         <p>Audio & Video Editing</p>
                     </li>
                     <li>
-                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <img src={images.productDevelopment} alt="person drawing sketch on tablet with pencil" />
                         <p>Product & Branding Design</p>
                     </li>
                     <li>
-                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <img src={images.customerSupport} alt="open laptop on wooden table" />
                         <p>Admin & Customer Support</p>
                     </li>
                 </ul>
