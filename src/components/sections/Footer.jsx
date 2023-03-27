@@ -1,4 +1,4 @@
-import Images from "../Images";
+import images from "../Images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 
@@ -24,7 +24,7 @@ const Footer = () => {
             <div className='mainFooter wrapper'>
                 <div className='footerFlexContainer'>
                     <div>
-                        <img src={Images.jobiLogoBlack} alt="Jobi logo" />
+                        <img src={images.jobiLogoBlack} alt="Jobi logo" />
                     </div>
                     <div>
                         <h3>Links</h3>
