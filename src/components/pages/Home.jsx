@@ -102,6 +102,9 @@ const Home = () => {
                     </li>
                 </ul>
             </section>
+            <section className >
+
+            </section>
         </main>
     )
 }
