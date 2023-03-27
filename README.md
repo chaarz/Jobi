@@ -1,3 +1,3 @@
 # Welcome to Jobi
 
-**View live site [here](https://charlotteduppre.com).**
+**View live site [here](https://jobi-job-board.netlify.app/).**
