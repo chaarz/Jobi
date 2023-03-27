@@ -1,4 +1,4 @@
-import images from '../Images';
+import Images from '../Images';
 
 const Home = () => {
     return (
@@ -6,22 +6,22 @@ const Home = () => {
             <section className='partners'>
                 <ul className='wrapper'>
                     <li>
-                        <img src={images.google} alt="Google logo" />
+                        <img src={Images.google} alt="Google logo" />
                     </li>
                     <li>
-                        <img src={images.shipbob} alt="ShipBob logo" />
+                        <img src={Images.shipbob} alt="ShipBob logo" />
                     </li>
                     <li>
-                        <img src={images.dribbble} alt="Dribbble logo" />
+                        <img src={Images.dribbble} alt="Dribbble logo" />
                     </li>
                     <li>
-                        <img src={images.slack} alt="Slack logo" />
+                        <img src={Images.slack} alt="Slack logo" />
                     </li>
                     <li>
-                        <img src={images.vine} alt="Vine logo" />
+                        <img src={Images.vine} alt="Vine logo" />
                     </li>
                     <li>
-                        <img src={images.airbnb} alt="Airbnb logo" />
+                        <img src={Images.airbnb} alt="Airbnb logo" />
                     </li>
                 </ul>
             </section>
@@ -35,37 +35,37 @@ const Home = () => {
                 <ul>
                     <li>
                         <div className='category category1'>
-                            <img src={images.uiuxdesign} alt="pencil icon" aria-hidden='true'/>
+                            <img src={Images.uiuxdesign} alt="pencil icon" aria-hidden='true'/>
                             <p>UI/UX Design</p>
                         </div>
                     </li>
                     <li>
                     <div className='category category2'>
-                            <img src={images.development} alt="html tag icon" aria-hidden='true'/>
+                            <img src={Images.development} alt="html tag icon" aria-hidden='true'/>
                             <p>Development</p>
                         </div>
                     </li>
                     <li>
                     <div className='category category3'>
-                            <img src={images.marketing} alt="bag icon" aria-hidden='true'/>
+                            <img src={Images.marketing} alt="bag icon" aria-hidden='true'/>
                             <p>Marketing</p>
                         </div>
                     </li>
                     <li>
                     <div className='category category4'>
-                            <img src={images.telemarketing} alt="phone icon" aria-hidden='true'/>
+                            <img src={Images.telemarketing} alt="phone icon" aria-hidden='true'/>
                             <p>Telemarketing</p>
                         </div>
                     </li>
                     <li>
                     <div className='category category5'>
-                            <img src={images.accounting} alt="accounting icon" aria-hidden='true'/>
+                            <img src={Images.accounting} alt="accounting icon" aria-hidden='true'/>
                             <p>Accounting</p>
                         </div>
                     </li>
                     <li>
                     <div className='category category6'>
-                            <img src={images.editing} alt="editing icon" aria-hidden='true'/>
+                            <img src={Images.editing} alt="editing icon" aria-hidden='true'/>
                             <p>Editing</p>
                         </div>
                     </li>
@@ -76,28 +76,28 @@ const Home = () => {
                     <h2>Trending Jobs</h2>
                     <div>
                         <button>
-                            <img src={images.backArrow} alt="back arrow" />
+                            <img src={Images.backArrow} alt="back arrow" />
                         </button>
                         <button>
-                            <img src={images.nextArrow} alt="next arrow" />
+                            <img src={Images.nextArrow} alt="next arrow" />
                         </button>
                     </div>
                 </div>
                 <ul>
                     <li>
-                        <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
+                        <img src={Images.wordpressDevelopment} alt="open laptop on wooden table" />
                         <p>Wordpress Development</p>
                     </li>
                     <li>
-                        <img src={images.audioEditing} alt="man writing with headsets on" />
+                        <img src={Images.audioEditing} alt="man writing with headsets on" />
                         <p>Audio & Video Editing</p>
                     </li>
                     <li>
-                        <img src={images.productDevelopment} alt="person drawing sketch on tablet with pencil" />
+                        <img src={Images.productDevelopment} alt="person drawing sketch on tablet with pencil" />
                         <p>Product & Branding Design</p>
                     </li>
                     <li>
-                        <img src={images.customerSupport} alt="open laptop on wooden table" />
+                        <img src={Images.customerSupport} alt="open laptop on wooden table" />
                         <p>Admin & Customer Support</p>
                     </li>
                 </ul>
