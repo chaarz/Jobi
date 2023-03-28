@@ -19,6 +19,7 @@ import customerSupport from '../assets/customer-support.jpg';
 import backArrow from '../assets/back-arrow-icon-black.png';
 import nextArrow from '../assets/next-arrow-icon.png';
 import error404 from '../assets/error404.jpg';
+import profile from '../assets/profile.png';
 
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404 };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile };
