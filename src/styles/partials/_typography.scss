@@ -78,3 +78,13 @@ footer a{
 .icon{
     font-size: 1rem;
 }
+
+.errorPage{ 
+    h1{
+        color: $quaternaryColour;
+    }
+    a{
+        color: $secondaryColour;
+        text-decoration: none;
+    }
+}

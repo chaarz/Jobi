@@ -18,6 +18,7 @@ import audioEditing from '../assets/audio-video-editing.jpg';
 import customerSupport from '../assets/customer-support.jpg';
 import backArrow from '../assets/back-arrow-icon-black.png';
 import nextArrow from '../assets/next-arrow-icon.png';
+import error404 from '../assets/error404.jpg';
 
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404 };
