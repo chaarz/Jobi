@@ -25,23 +25,31 @@ const JobList = () => {
         });
     }, [])
     return (
-        <section>
-            <p>This is the Job List page!</p>
+        <section className='wrapper jobList'>
+            <div className='jobListSort'>
+                <p> {jobs.length} <span>jobs found</span></p>
+            </div>
             <ul>
                 {jobs.map((job) => {
                     return (
                         <li key={job.title}>
-                            <div>
+                            <div className='jobTitle'>
                                 <img src={images.profile} alt="company logo" />
                                 <p>{job.title}</p>
                             </div>
-                            <div>
+                            <div className='jobCardType flex'>
                                 <p>{job.contractType}</p>
                                 <p>${job.salary.min}-${job.salary.max}</p>
                             </div>
-                            <div>
+                            <div className='jobCardDetails flex'>
                                 <p>{job.location.city}, {job.location.country}</p>
                                 <p>{job.category}</p>
+                            </div>
+                            <div className='jobCardBtn'>
+                                <button className='saveJobBtn'>
+                                    <img src={images.bookmark} alt="bookmark icon" />
+                                </button>
+                                <button>APPLY</button>
                             </div>
                         </li>
                     )

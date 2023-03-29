@@ -18,7 +18,7 @@ button, .button{
     //     color: $secondaryColour;
     //     background-color: $primaryColour;
     // }
-    &.loginBtn, &.lookingBtn{
+    &.loginBtn, &.lookingBtn, &.saveJobBtn{
         border: 1px solid $secondaryColour;
         background-color: unset;
         &.lookingBtn{
@@ -26,6 +26,10 @@ button, .button{
             color: $quaternaryColour
         }
     }
+}
+
+.saveJobBtn{
+    padding: unset;
 }
 
 footer button{

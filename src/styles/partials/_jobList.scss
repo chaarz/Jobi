@@ -1,0 +1,45 @@
+@use 'variables' as *;
+
+.jobList{
+    .jobListSort{
+        padding: 0 0 2rem .25rem;
+        span{
+            color: $grey;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li{
+            padding: 1rem;
+            border: 1px solid $grey;
+            border-radius: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .flex{
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+            }
+            .jobTitle{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                width: 35%;
+            }
+            .jobCardType{
+                width: 25%;
+            }
+            .jobCardDetails{
+                width: 25%;
+            }
+            .jobCardBtn{
+                width: 15%;
+                display: flex;
+                gap: .75rem;
+            }
+        }
+    }
+}
