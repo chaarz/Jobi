@@ -39,6 +39,10 @@ main a {
     text-decoration: underline;
 }
 
+.jobList a{
+    text-decoration: unset;
+}
+
 h1{
     font-family: $headingFont;
     font-size: 3.6rem;
