@@ -77,3 +77,59 @@
         }
     }
 }
+
+.howItWorks{
+    background-color: $grey;
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .heading{
+            padding-left: 30rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            h2{
+                color: $secondaryColour;
+                span{
+                    color: $quaternaryColour;
+                }
+            }
+            p{
+                line-height: 1.8;
+                color: $secondaryColour;
+            }
+        }
+        .cards{
+            ul{
+                display: flex;
+                li{
+                    width: calc((100%/3) - 2%);
+                    margin: 1%;
+                    padding: 1rem;
+                    background-color: $secondaryColour;
+                    border-radius: .3rem;
+                    .cardHeading{
+                        padding-bottom: .25rem;
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        img{
+                            width: 3rem;
+                        }
+                        p{
+                            line-height: 1.65;
+                        }
+                    }
+                    a{
+                        padding-left: 4rem;
+                        color:$quaternaryColour;
+                        text-decoration: none;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        } 
+    }
+}

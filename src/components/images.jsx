@@ -21,5 +21,8 @@ import nextArrow from '../assets/next-arrow-icon.png';
 import error404 from '../assets/error404.jpg';
 import profile from '../assets/profile.png';
 import bookmark from '../assets/bookmark.png';
+import videoPayBtn from '../assets/video-play-button.png';
+import account from '../assets/account.png';
+import apply from '../assets/apply.png';
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply };

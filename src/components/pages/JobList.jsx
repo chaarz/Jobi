@@ -114,12 +114,11 @@ const JobList = () => {
         // we then create a variable that makes reference to our database
         const dbRef = ref(database, 'jobs/')
 
-        const newJobData = set(dbRef, [] )
+        set(dbRef, [] )
 
-        jobSample.forEach((job) =>{
-            const jobData = push(dbRef, job)
+        jobSample.forEach((job) => {
+            push(dbRef, job)
         })
-        // const jobData = push(dbRef, {title: 'Software Engineer', contractType: 'Temp'});
         // add an event listener to that variable that will fire
         // from the database, and call that data 'response'.
         onValue(dbRef, (response) => {
@@ -149,7 +148,7 @@ const JobList = () => {
                         return (
                             <Link to={`/jobList/${job.uid}`}
                             >
-                                <li key={job.title}>
+                                <li key={job.uid}>
                                     <div className='jobTitle'>
                                         <img src={images.profile} alt="company logo" />
                                         <p>{job.title}</p>
