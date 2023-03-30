@@ -155,8 +155,14 @@ const Home = () => {
                                     <p>Seamless Search</p>
                                     <FontAwesomeIcon icon={faChevronDown} />
                                     </li>
-                                <li>Hire top talents</li>
-                                <li className='noBorder'>Protected Payments, every time</li>
+                                <li>
+                                    <p>Hire top talents</p>
+                                    <FontAwesomeIcon icon={faChevronDown} />
+                                </li>
+                                <li className='noBorder'>
+                                    <p>Protected Payments, every time</p>
+                                    <FontAwesomeIcon icon={faChevronDown} />
+                                </li>
                             </ul>
                             <a href="#" className='button'>Learn more</a>
                         </div>

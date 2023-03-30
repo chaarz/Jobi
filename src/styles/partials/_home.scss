@@ -147,8 +147,14 @@
                 font-size: 0.9rem;
             }
             li{
+                display: flex;
+                gap: 2rem;
+                justify-content: space-between;
                 padding: 1rem 0;
                 border-bottom: 1px solid $grey;
+                p{
+                    color: $primaryColour;
+                }
             }
             .noBorder{
                 border-bottom: unset;
