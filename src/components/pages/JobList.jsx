@@ -7,35 +7,29 @@ import firebase from '../firebase';
 
 const JobList = () => {
     const [jobs, setJobs] = useState([]);
-    // sample job object
+
     const jobSample = JobSamples;
 
     useEffect(() => {
-        // create a variable that holds our database details
+
         const database = getDatabase(firebase)
 
-        // we then create a variable that makes reference to our database
         const dbRef = ref(database, 'jobs/')
 
-        set(dbRef, [] )
-
-        jobSample.forEach((job) => {
-            push(dbRef, job)
-        })
-        // add an event listener to that variable that will fire
-        // from the database, and call that data 'response'.
         onValue(dbRef, (response) => {
-            // here we use Firebase's .val() method to parse our database info the way we want it
+
             const data = response.val();
-            console.log(data)
 
             const arrayOfJobs = []
 
             for (let key in data) {
-                arrayOfJobs.push(data[key])
-            }
+              const jobObject = {
+                id: key,
+                ...data[key]
+              };
 
-            console.log(arrayOfJobs);
+              arrayOfJobs.push(jobObject)
+            }
 
             setJobs(arrayOfJobs);
         });
@@ -49,7 +43,7 @@ const JobList = () => {
                 <ul>
                     {jobs.map((job) => {
                         return (
-                            <Link to={`/jobList/${job.uid}`}
+                            <Link to={`/jobList/${job.id}`}
                             >
                                 <li key={job.uid}>
                                     <div className='jobTitle'>
