@@ -1,8 +1,10 @@
 import NavBar from "./NavBar";
 import { useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
+
     const location = useLocation();
+    
     return (
         <header>
             <div className="wrapper">
@@ -44,6 +46,15 @@ const Header = () => {
                             <div className="headerTextContainer">
                                 <h1>Job Listing</h1>
                                 <p>Unlock your potential and find your dream job</p>
+                            </div>
+                        </div>
+                    ) : null
+                }
+                {
+                    props.title !== undefined ? (
+                        <div className="heading">
+                            <div className="headerTextContainer">
+                                <h1>{props.title}</h1>
                             </div>
                         </div>
                     ) : null

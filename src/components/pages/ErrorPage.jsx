@@ -1,8 +1,11 @@
 import { NavLink} from 'react-router-dom';
 import images from '../images';
+import Header from '../sections/Header';
 
 const ErrorPage = () => {
     return (
+        <>
+        <Header />
         <main>
             <section className='errorPage wrapper'>
                 <div className='imgContainer'>
@@ -18,6 +21,7 @@ const ErrorPage = () => {
                 </div>
             </section>
         </main>
+        </>
     )
 }
 
