@@ -44,8 +44,8 @@ const JobList = () => {
                     {jobs.map((job) => {
                         return (
                             <Link to={`/jobList/${job.id}`}
-                            >
-                                <li key={job.uid}>
+                            key={job.id}>
+                                <li>
                                     <div className='jobTitle'>
                                         <img src={images.profile} alt="company logo" />
                                         <p>{job.title}</p>
