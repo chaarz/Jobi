@@ -137,6 +137,26 @@ const Home = () => {
                         </ul>
                     </div>
                 </div>
+            </section>
+            <section className='about wrapper'>
+                <div className='aboutFlexContainer'>
+                    <div className='aboutTextContainer'>
+                        <div>
+                            <p>Why choose us ?</p>
+                            <h2>World of talents at your fingertips</h2>
+                        </div>
+                        <ul>
+                            <li>Seamless Search</li>
+                            <li>Hire top talents</li>
+                            <li>Protected Payments, every time</li>
+                        </ul>
+                        <a href="#" className='button'>Learn more</a>
+                    </div>
+                    <div>
+                        <img src={images.about} alt="" />
+                    </div>
+                    
+                </div>
 
             </section>
         </main>

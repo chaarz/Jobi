@@ -24,10 +24,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .category{
-            padding: .75rem 1.5rem;
+            padding: .75rem 1.25rem;
             display: flex;
             align-items: center;
-            gap: .75rem;
+            gap: .5rem;
             border-radius: 2rem;
             background-color: #EAFBFD;
             p{
@@ -131,5 +131,24 @@
                 }
             }
         } 
+    }
+}
+
+.about{
+    .aboutFlexContainer{
+        display: flex;
+        .aboutTextContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            p{
+                color: $quaternaryColour;
+                font-size: 0.9rem;
+            }
+            li{
+                padding: 1rem 0;
+            }
+        }
     }
 }
