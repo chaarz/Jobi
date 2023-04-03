@@ -1,9 +1,23 @@
 import images from '../images';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Header from '../sections/Header';
+import AboutAccordion from '../../utils/AboutAccordion';
 
 const Home = () => {
+    const accordionData = [
+        {
+          title: 'Seamless Search',
+          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand`
+        },
+        {
+          title: 'Hire top talents',
+          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand`
+        },
+        {
+          title: 'Protected Payments, every time',
+          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand`
+        }
+      ];
+
     return (
         <>
             <Header />
@@ -34,43 +48,43 @@ const Home = () => {
                     <div className='categoryHeading'>
                         <h2>Most in demand categories</h2>
                         <a href="#" className='highlight'>Explore all categories
-                        {'>'}
+                            {'>'}
                         </a>
                     </div>
                     <ul>
                         <li>
                             <div className='category category1'>
-                                <img src={images.uiuxdesign} alt="pencil icon" aria-hidden='true'/>
+                                <img src={images.uiuxdesign} alt="pencil icon" aria-hidden='true' />
                                 <p>UI/UX Design</p>
                             </div>
                         </li>
                         <li>
-                        <div className='category category2'>
-                                <img src={images.development} alt="html tag icon" aria-hidden='true'/>
+                            <div className='category category2'>
+                                <img src={images.development} alt="html tag icon" aria-hidden='true' />
                                 <p>Development</p>
                             </div>
                         </li>
                         <li>
-                        <div className='category category3'>
-                                <img src={images.marketing} alt="bag icon" aria-hidden='true'/>
+                            <div className='category category3'>
+                                <img src={images.marketing} alt="bag icon" aria-hidden='true' />
                                 <p>Marketing</p>
                             </div>
                         </li>
                         <li>
-                        <div className='category category4'>
-                                <img src={images.telemarketing} alt="phone icon" aria-hidden='true'/>
+                            <div className='category category4'>
+                                <img src={images.telemarketing} alt="phone icon" aria-hidden='true' />
                                 <p>Telemarketing</p>
                             </div>
                         </li>
                         <li>
-                        <div className='category category5'>
-                                <img src={images.accounting} alt="accounting icon" aria-hidden='true'/>
+                            <div className='category category5'>
+                                <img src={images.accounting} alt="accounting icon" aria-hidden='true' />
                                 <p>Accounting</p>
                             </div>
                         </li>
                         <li>
-                        <div className='category category6'>
-                                <img src={images.editing} alt="editing icon" aria-hidden='true'/>
+                            <div className='category category6'>
+                                <img src={images.editing} alt="editing icon" aria-hidden='true' />
                                 <p>Editing</p>
                             </div>
                         </li>
@@ -151,18 +165,11 @@ const Home = () => {
                                 <h2>World of talents at your fingertips</h2>
                             </div>
                             <ul>
-                                <li>
-                                    <p>Seamless Search</p>
-                                    <FontAwesomeIcon icon={faChevronDown} />
-                                    </li>
-                                <li>
-                                    <p>Hire top talents</p>
-                                    <FontAwesomeIcon icon={faChevronDown} />
-                                </li>
-                                <li className='noBorder'>
-                                    <p>Protected Payments, every time</p>
-                                    <FontAwesomeIcon icon={faChevronDown} />
-                                </li>
+                                {
+                                    accordionData.map(({title, content}) => (
+                                        < AboutAccordion title={title} content={content} />
+                                    ))
+                                }
                             </ul>
                             <a href="#" className='button'>Learn more</a>
                         </div>

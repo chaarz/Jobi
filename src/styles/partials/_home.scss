@@ -148,9 +148,7 @@
             }
             li{
                 display: flex;
-                gap: 2rem;
-                justify-content: space-between;
-                padding: 1rem 0;
+                flex-direction: column;
                 border-bottom: 1px solid $grey;
                 p{
                     color: $primaryColour;
@@ -161,4 +159,12 @@
             }
         }
     }
+}
+
+.aboutBtn{
+    padding: 1rem 0;
+    background-color: unset;
+    color: $primaryColour;
+    display: flex;
+    justify-content: space-between;
 }
