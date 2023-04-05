@@ -3,24 +3,26 @@
 footer{
     .upperFooter{
         padding: 3rem 0;
-        background-color: $tertiaryColour;
+        background: linear-gradient(90deg, rgba(0, 0, 0, .6) 0%, rgba(216,216,216,1) 60%);
         p{
             color: $secondaryColour;
         }
-    }
-    .flexContainer{
-        display: flex;
-        justify-content: space-between;
-        .headingContainer{
-            flex: .75;
-        }
-        .flexTextContainer{
+        .flexContainer{
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            .flexBtnContainer{
+            justify-content: space-between;
+            .headingContainer{
+                flex: .85;
+            }
+            .flexTextContainer{
+                flex: .5;
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                .flexBtnContainer{
+                    display: flex;
+                    gap: .5rem;
+                }
             }
         }
     }

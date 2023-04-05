@@ -12,7 +12,7 @@ const Footer = () => {
                             <h2>Complete Job Portal for Everyone</h2>
                         </div>
                         <div className='flexTextContainer'>
-                            <p>Find your dream job or your next talent.</p>
+                            <p>Sign up to find your dream job or discover your next talent.</p>
                             <div className='flexBtnContainer'>
                                 <button className='lookingBtn'>Looking for a job?</button>
                                 <button>Post a job</button>
