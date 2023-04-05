@@ -7,18 +7,18 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
     const accordionData = [
         {
-          title: 'Seamless Search',
-          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
+            title: 'Seamless Search',
+            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
         },
         {
-          title: 'Hire top talents',
-          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
+            title: 'Hire top talents',
+            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
         },
         {
-          title: 'Protected Payments, every time',
-          content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
+            title: 'Protected Payments, every time',
+            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
         }
-      ];
+    ];
 
     return (
         <>
@@ -97,10 +97,10 @@ const Home = () => {
                         <h2>Trending Jobs</h2>
                         <div>
                             <button className='prevNextBtn'>
-                                <FontAwesomeIcon icon={faArrowLeft} />  
+                                <FontAwesomeIcon icon={faArrowLeft} />
                             </button>
                             <button className='prevNextBtn'>
-                                <FontAwesomeIcon icon={faArrowRight} /> 
+                                <FontAwesomeIcon icon={faArrowRight} />
                             </button>
                         </div>
                     </div>
@@ -168,7 +168,7 @@ const Home = () => {
                             </div>
                             <ul>
                                 {
-                                    accordionData.map(({title, content}) => (
+                                    accordionData.map(({ title, content }) => (
                                         < AboutAccordion title={title} content={content} key={title} />
                                     ))
                                 }
@@ -177,6 +177,51 @@ const Home = () => {
                         </div>
                         <div className='aboutImgContainer'>
                             <img src={images.about} alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section className='testimonials'>
+                    <div className='wrapper'>
+                        <div className='testimonialsHeading'>
+                            <h2>What our clients say about us</h2>
+                            <div>
+                                <button className='prevNextBtn'>
+                                    <FontAwesomeIcon icon={faArrowLeft} />
+                                </button>
+                                <button className='prevNextBtn'>
+                                    <FontAwesomeIcon icon={faArrowRight} />
+                                </button>
+                            </div>
+                        </div>
+                        <div className='testimonialCards'>
+                            <ul>
+                                <li>
+                                    <div className='cardHeading'>
+                                        <p>Impressive!</p>
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                    </div>
+                                    <div className='review'>
+                                        <p>Amazing theme, I'm using it for our internal process and procedures, and it's working very well.</p>
+                                        <div className='client'>
+                                            <p>Rashed Ka, Dhaka</p>
+                                            <img src={images.greyCircle} alt="clientImg" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className='cardHeading'>
+                                        <p>Great work!!</p>
+                                        <p>⭐⭐⭐⭐⭐</p>
+                                    </div>
+                                    <div className='review'>
+                                        <p>One of the best places to find experts. Highly recommend!</p>
+                                        <div className='client'>
+                                            <p>Zubayer Al Hasan, USA</p>
+                                            <img src={images.greyCircle} alt="clientImg" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>

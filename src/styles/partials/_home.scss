@@ -200,3 +200,49 @@
     }
 }
 
+.testimonials{
+    background-color: $grey;
+    .testimonialsHeading{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        h2{
+            width: 50%;
+            color: $secondaryColour;
+        }
+        button{
+            color: $secondaryColour;
+        }
+    }
+    .testimonialCards{
+        ul{
+            display: flex;
+            li{
+                width: calc((100%/2) - 6%);
+                margin: 3%;
+                padding: 2rem;
+                background-color: $secondaryColour;
+                border-radius: .3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .cardHeading p{
+                    color: $quaternaryColour;
+                }
+                .review{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 2rem;
+                    height: 100%;
+                    .client{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
