@@ -1,6 +1,8 @@
 import images from '../images';
 import Header from '../sections/Header';
 import AboutAccordion from '../../utils/AboutAccordion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const accordionData = [
@@ -94,18 +96,18 @@ const Home = () => {
                     <div className='trendingHeading'>
                         <h2>Trending Jobs</h2>
                         <div>
-                            <button>
-                                <img src={images.backArrow} alt="back arrow" />
+                            <button className='prevNextBtn'>
+                                <FontAwesomeIcon icon={faArrowLeft} />  
                             </button>
-                            <button>
-                                <img src={images.nextArrow} alt="next arrow" />
+                            <button className='prevNextBtn'>
+                                <FontAwesomeIcon icon={faArrowRight} /> 
                             </button>
                         </div>
                     </div>
                     <ul>
                         <li>
                             <img src={images.wordpressDevelopment} alt="open laptop on wooden table" />
-                            <p>Wordpress Development</p>
+                            <p>WordPress Development</p>
                         </li>
                         <li>
                             <img src={images.audioEditing} alt="man writing with headsets on" />
