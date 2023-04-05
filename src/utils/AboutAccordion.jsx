@@ -8,7 +8,7 @@ const AboutAccordion = ( { title, content } ) => {
     return (
         <li>
             <button className="aboutBtn" onClick={() => setIsActive(!isActive)}>
-                <p>{title}</p>
+                <h3>{title}</h3>
                 {
                     isActive
                         ? <FontAwesomeIcon icon={faChevronUp} />

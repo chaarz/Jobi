@@ -137,6 +137,10 @@
 .about{
     .aboutFlexContainer{
         display: flex;
+        gap: 1rem;
+        .aboutTextContainer, .aboutImgContainer{
+            flex: 1;
+        }
         .aboutTextContainer{
             display: flex;
             flex-direction: column;
@@ -145,26 +149,48 @@
             p{
                 color: $quaternaryColour;
                 font-size: 0.9rem;
+                line-height: 1.75;
             }
-            li{
-                display: flex;
-                flex-direction: column;
-                border-bottom: 1px solid $grey;
-                p{
-                    color: $primaryColour;
+            ul{
+                width: 100%;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    padding: .5rem 0;
+                    border-bottom: 1px solid $grey;
+                    p{
+                        color: $primaryColour;
+                        padding: .5rem 0;
+                        line-height: 1.6;
+                    }
+                    &:last-child{
+                        border-bottom: unset;
+                    }
                 }
             }
-            .noBorder{
-                border-bottom: unset;
+        }
+        .aboutImgContainer{
+            img{
+                padding: 1rem 0 0 3rem;
             }
         }
     }
 }
 
 .aboutBtn{
-    padding: 1rem 0;
+    padding: unset;
     background-color: unset;
     color: $primaryColour;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    h3{
+        font-family: $headingFont;
+        font-size: 1.2rem;
+        font-weight: unset;
+        line-height: 2.25;
+        color: #005025;
+        margin-bottom: unset;
+    }
 }
+
