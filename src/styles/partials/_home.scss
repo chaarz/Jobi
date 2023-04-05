@@ -137,7 +137,6 @@
 .about{
     .aboutFlexContainer{
         display: flex;
-        gap: 1rem;
         .aboutTextContainer, .aboutImgContainer{
             flex: 1;
         }
@@ -170,8 +169,12 @@
             }
         }
         .aboutImgContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
             img{
-                padding: 1rem 0 0 3rem;
+                width: 80%;
             }
         }
     }
