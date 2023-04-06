@@ -1,3 +1,3 @@
 # Welcome to Jobi
 
-**View live site [here](https://jobi-job-board.netlify.app/).**
+**View live site [here](https://jobi-joba.netlify.app/).**
