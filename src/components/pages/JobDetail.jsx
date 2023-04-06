@@ -7,8 +7,11 @@ import Header from '../sections/Header';
 const JobDetail = () => {
   const [jobDetails, setJobDetails] = useState({
     responsibilities: [],
-    requiredSkills: []
+    requiredSkills: [],
+    benefits: []
   })
+
+  console.log(jobDetails)
 
   const jobId = useParams();
 
@@ -71,7 +74,13 @@ const JobDetail = () => {
             </div>
             <div>
               <h3>Benefits</h3>
-              <p>{jobDetails.benefits}</p>
+              <p>{jobDetails.benefits.map((benefit) =>{
+                return(
+                  <li key={benefit}>
+                  {benefit}
+                </li>
+                )
+              })}</p>
             </div>
             <button>Apply for this position</button>
           </div>
