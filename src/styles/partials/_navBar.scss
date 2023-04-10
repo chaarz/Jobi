@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 .navBar{
-    padding: 2rem 0;
+    padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,11 +10,12 @@
 .desktopNav{
     display: flex;
     justify-content: space-between;
-    gap: 7rem;
+    width: 70%;
+    // gap: 7rem;
     ul{
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .navButtons{
         display: flex;

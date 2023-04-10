@@ -7,8 +7,8 @@ const Header = (props) => {
     
     return (
         <header>
+            <NavBar />
             <div className="wrapper">
-                <NavBar />
                 {
                     location.pathname === "/" ? (
                         <div className="heading">
