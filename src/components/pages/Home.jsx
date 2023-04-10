@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import images from '../images';
 import Header from '../sections/Header';
 import AboutAccordion from '../../utils/AboutAccordion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
     const accordionData = [
@@ -49,9 +50,9 @@ const Home = () => {
                 <section className='categories wrapper'>
                     <div className='categoryHeading'>
                         <h2>Most in demand categories</h2>
-                        <a href="#" className='highlight'>Explore all categories
-                            {'>'}
-                        </a>
+                        <Link to="/" className='highlight'>
+                            Explore all categories {'>'}
+                        </Link>
                     </div>
                     <ul>
                         <li>
@@ -93,7 +94,7 @@ const Home = () => {
                     </ul>
                 </section>
                 <section className='trending wrapper'>
-                    <div className='trendingHeading'>
+                    <div className='sectionHeading'>
                         <h2>Trending Jobs</h2>
                         <div>
                             <button className='prevNextBtn'>
@@ -125,7 +126,7 @@ const Home = () => {
                 </section>
                 <section className='howItWorks'>
                     <div className='wrapper flex'>
-                        <div className='heading'>
+                        <div className='howItWorksHeading'>
                             <img src={images.videoPayBtn} alt="video play button" />
                             <h2>Let's get started
                                 It's <span>simple.</span>
@@ -224,6 +225,55 @@ const Home = () => {
                             </ul>
                         </div>
                     </div>
+                </section>
+                <section className='jobiGuides wrapper'>
+                    <div className='sectionHeading'>
+                        <h2>Jobi Guides</h2>
+                        <Link to="/" className='highlight'>
+                            Explore more {'>'}
+                        </Link>
+                    </div>
+                    <ul>
+                        <li>
+                            <div className='imgContainer'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='card'>
+                                <p className='date'>July 23, 2022</p>
+                                <h3>Challenge yourself and win the future</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
+                                <Link to='/' className='highlight'>
+                                    <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
+                                </Link>
+                            </div>
+                        </li>
+                        <li>
+                            <div className='imgContainer'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='card'>
+                                <p className='date'>July 23, 2022</p>
+                                <h3>Challenge yourself and win the future</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
+                                <Link to='/' className='highlight'>
+                                    <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
+                                </Link>
+                            </div>
+                        </li>
+                        <li>
+                            <div className='imgContainer'>
+                                <img src="" alt="" />
+                            </div>
+                            <div className='card'>
+                                <p className='date'>July 23, 2022</p>
+                                <h3>Challenge yourself and win the future</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
+                                <Link to='/' className='highlight'>
+                                    <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
+                                </Link>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
             </main>
         </>

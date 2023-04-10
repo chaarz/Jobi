@@ -83,16 +83,12 @@ select {
     margin: 0;
 }
 
-h3{
-    margin-bottom: 1rem;
-}
-
 label{
     padding-bottom: .5rem;
 }
 
 input{
-    border:none;
+    border: none;
     &:hover, &:focus{
     border-bottom: 2px solid $quaternaryColour;
     }
@@ -112,4 +108,11 @@ select{
     &:focus {
         color: $quaternaryColour;
     }
+}
+
+.sectionHeading{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -15,6 +15,7 @@ import editing from '../assets/editing.png';
 import wordpressDevelopment from '../assets/wordpress-development.jpg';
 import productDevelopment from '../assets/product-development.jpg';
 import audioEditing from '../assets/audio-video-editing.jpg';
+import audioEditingSmall from '../assets/audio-video-editing-small.jpg';
 import customerSupport from '../assets/customer-support.jpg';
 import backArrow from '../assets/back-arrow-icon-black.png';
 import nextArrow from '../assets/next-arrow-icon.png';
@@ -27,4 +28,4 @@ import apply from '../assets/apply.png';
 import about from '../assets/about.png';
 import greyCircle from '../assets/grey-circle.png';
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall };
