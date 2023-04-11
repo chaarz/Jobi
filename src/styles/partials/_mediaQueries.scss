@@ -1,0 +1,31 @@
+@use './variables' as *;
+
+@mixin desktop {
+    @media (max-width: 1460px) {
+        @content;
+      }
+}
+
+@mixin smallDesktop {
+    @media (max-width: 1140px) {
+      @content;
+    }
+}
+  
+@mixin tablet {
+    @media (max-width: 750px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+//   @mixin smallTablet {
+//     @media (max-width: 620px) {
+//       @content;
+//     }
+//   }

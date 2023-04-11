@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .partners{
     background-color: $lightGrey;
