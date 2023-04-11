@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import images from '../images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
@@ -30,16 +31,16 @@ const Footer = () => {
                         <h3>Links</h3>
                         <ul>
                             <li>
-                                <a href="#">Pricing</a>
+                                <Link to="/">Pricing</Link>
                             </li>
                             <li>
-                                <a href="#">About Us</a>
+                                <Link to="/">About Us</Link>
                             </li>
                             <li>
-                                <a href="#">Careers</a>
+                                <Link to="/">Careers</Link>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
+                                <Link to="/">Blog</Link>
                             </li>
                         </ul>
                     </div>
@@ -47,22 +48,22 @@ const Footer = () => {
                         <h3>Products</h3>
                         <ul>
                             <li>
-                                <a href="#">Take the tour</a>
+                                <Link to="/">Take the tour</Link>
                             </li>
                             <li>
-                                <a href="#">Live chat</a>
+                                <Link to="/">Live chat</Link>
                             </li>
                             <li>
-                                <a href="#">Self-service</a>
+                                <Link to="/">Self-service</Link>
                             </li>
                             <li>
-                                <a href="#">Mobile</a>
+                                <Link to="/">Mobile</Link>
                             </li>
                             <li>
-                                <a href="#">Collaboration</a>
+                                <Link to="/">Collaboration</Link>
                             </li>
                             <li>
-                                <a href="#">Reviews</a>
+                                <Link to="/">Reviews</Link>
                             </li>
                         </ul>
                     </div>
@@ -70,16 +71,16 @@ const Footer = () => {
                         <h3>Legal</h3>
                         <ul>
                             <li>
-                                <a href="#">Terms of use</a>
+                                <Link to="/">Terms of use</Link>
                             </li>
                             <li>
-                                <a href="#">Terms & Conditions</a>
+                                <Link to="/">Terms & Conditions</Link>
                             </li>
                             <li>
-                                <a href="#">Privacy</a>
+                                <Link to="/">Privacy</Link>
                             </li>
                             <li>
-                                <a href="#">Cookie policy</a>
+                                <Link to="/">Cookie policy</Link>
                             </li>
                         </ul>
                     </div>
@@ -96,23 +97,23 @@ const Footer = () => {
                 </div>
                 <div className="bottomFooter">
                     <div className='flexContainer'>
-                        <a href="#" className='highlight'>Privacy & Terms</a>
-                        <a href="#" className='highlight'>Contact Us</a>
+                        <Link to="/" className='highlight'>Privacy & Terms</Link>
+                        <Link to="/" className='highlight'>Contact Us</Link>
                     </div>
                     <p>Copyright @2023 jobi inc.</p>
                     <div className='socialIcons'>
-                        <a href="#">
+                        <Link to='/'>
                             <FontAwesomeIcon icon={faFacebookF} className='icon highlight' />
                             <span className="sr-only">Link to Facebook</span>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to='/'>
                             <FontAwesomeIcon icon={faInstagram} className='icon highlight' />
                             <span className="sr-only">Link to Instagram</span>
-                        </a>
-                        <a href="">
+                        </Link>
+                        <Link to='/'>
                             <FontAwesomeIcon icon={faPinterestP} className='icon highlight' />
                             <span className="sr-only">Link to Pinterest</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

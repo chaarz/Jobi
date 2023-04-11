@@ -16,20 +16,23 @@ html {
     font-size: 125%;
 }
 
-body, button, input, select {
+body,
+button,
+input,
+select {
     font-family: $bodyFont;
     font-size: $baseFontSize;
     color: $primaryColour;
-    background-color:unset;
+    background-color: unset;
     line-height: 1.2;
     letter-spacing: 1.2px;
 }
 
-button{
+button {
     font-size: 0.8rem;
 }
 
-a{
+a {
     font-size: 0.8rem;
     color: $secondaryColour;
 }
@@ -39,60 +42,67 @@ main a {
     text-decoration: underline;
 }
 
-.jobList a{
+.jobList a {
     text-decoration: unset;
 }
 
-h1{
+h1 {
     font-family: $headingFont;
     font-size: 3.6rem;
     font-weight: normal;
     color: $secondaryColour;
 }
 
-h2{
+h2 {
     font-family: $headingFont;
     font-size: 3rem;
     font-weight: 400;
 }
 
-h3{
+h3 {
     font-family: $bodyFont;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-p{
+p {
     line-height: 1.9;
 
 }
 
-label{
+label {
     color: $grey;
     font-size: 0.8rem;
 }
 
-footer h2{
-    color: $secondaryColour;
+footer {
+    h2 {
+        color: $secondaryColour;
+    }
+
+    h3 {
+        padding-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    a {
+        color: $primaryColour;
+    }
 }
 
-footer p{
-    font-size: 0.8rem;
-}
-
-footer a{
-    color: $primaryColour;
-}
-
-.icon{
+.icon {
     font-size: 1rem;
 }
 
-.errorPage{ 
-    h1{
+.errorPage {
+    h1 {
         color: $quaternaryColour;
     }
-    a{
+
+    a {
         color: $secondaryColour;
         text-decoration: none;
     }
