@@ -27,5 +27,6 @@ import account from '../assets/account.png';
 import apply from '../assets/apply.png';
 import about from '../assets/about.png';
 import greyCircle from '../assets/grey-circle.png';
+import collabImg from '../assets/bubble-circle-icon.png';
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall, collabImg };

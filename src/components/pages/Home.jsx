@@ -161,24 +161,22 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='about wrapper'>
-                    <div className='aboutFlexContainer'>
-                        <div className='aboutTextContainer'>
-                            <div>
-                                <p>Why choose us ?</p>
-                                <h2>World of talent at your fingertips</h2>
-                            </div>
-                            <ul>
-                                {
-                                    accordionData.map(({ title, content }) => (
-                                        < AboutAccordion title={title} content={content} key={title} />
-                                    ))
-                                }
-                            </ul>
-                            <Link to='/' className='button'>Learn more</Link>
+                    <div className='aboutTextContainer'>
+                        <div>
+                            <p>Why choose us ?</p>
+                            <h2>World of talent at your fingertips</h2>
                         </div>
-                        <div className='aboutImgContainer'>
-                            <img src={images.about} alt="" />
-                        </div>
+                        <ul>
+                            {
+                                accordionData.map(({ title, content }) => (
+                                    < AboutAccordion title={title} content={content} key={title} />
+                                ))
+                            }
+                        </ul>
+                        <Link to='/' className='button'>Learn more</Link>
+                    </div>
+                    <div className='aboutImgContainer'>
+                        <img src={images.about} alt="" />
                     </div>
                 </section>
                 <section className='testimonials'>
@@ -274,6 +272,22 @@ const Home = () => {
                             </div>
                         </li>
                     </ul>
+                </section>
+                <section className='collab about wrapper'>
+                    <div className='aboutImgContainer'>
+                        <img src={images.collabImg} alt="" />
+                    </div>
+                    <div className='aboutTextContainer'>
+                        <div>
+                            <p className='topBrands'>TOP BRANDS</p>
+                            <h2>Collaboration with Top Brands</h2>
+                        </div>
+                        <p>We collaborate with a number of top tier companies on imagining the future of work. Have a look!</p>
+                        <Link to='/' className='highlight'>
+                            Learn more 
+                            <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
+                        </Link>
+                    </div>
                 </section>
             </main>
         </>

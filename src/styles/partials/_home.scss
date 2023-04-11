@@ -125,50 +125,52 @@
 }
 
 .about{
-    .aboutFlexContainer{
+    display: flex;
+    .aboutTextContainer, .aboutImgContainer{
+        flex: 1;
+    }
+    .aboutTextContainer{
         display: flex;
-        .aboutTextContainer, .aboutImgContainer{
-            flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        h2{
+            padding-top: 1rem;
         }
-        .aboutTextContainer{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 2rem;
-            p{
-                color: $quaternaryColour;
-                font-size: 0.9rem;
-                line-height: 1.75;
-            }
-            ul{
-                width: 100%;
-                li{
-                    display: flex;
-                    flex-direction: column;
+        p{
+            color: $quaternaryColour;
+            font-size: 0.9rem;
+            line-height: 1.75;
+        }
+        ul{
+            width: 100%;
+            li{
+                display: flex;
+                flex-direction: column;
+                padding: .5rem 0;
+                border-bottom: 1px solid $grey;
+                p{
+                    color: $primaryColour;
                     padding: .5rem 0;
-                    border-bottom: 1px solid $grey;
-                    p{
-                        color: $primaryColour;
-                        padding: .5rem 0;
-                        line-height: 1.6;
-                    }
-                    &:last-child{
-                        border-bottom: unset;
-                    }
+                    line-height: 1.6;
+                }
+                &:last-child{
+                    border-bottom: unset;
                 }
             }
         }
-        .aboutImgContainer{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            img{
-                width: 80%;
-            }
+    }
+    .aboutImgContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        img{
+            width: 80%;
         }
     }
 }
+
 
 .aboutBtn{
     padding: unset;
@@ -262,6 +264,29 @@
                     align-self: flex-start;
                 }
             }
+        }
+    }
+}
+
+.collab{
+    .aboutImgContainer{
+        align-items: flex-start;
+    }
+    .aboutTextContainer{
+        justify-content: center;
+        .topBrands{
+            color: $grey;
+            font-size: 0.8rem;
+        }
+        p{
+            color: $primaryColour;
+            font-size: 1.2rem;
+            line-height: 2.15;
+        }
+        a{
+            text-decoration: none;
+            font-family: $headingFont;
+            font-size: 0.8rem;
         }
     }
 }
