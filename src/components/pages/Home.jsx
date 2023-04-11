@@ -48,7 +48,7 @@ const Home = () => {
                     </ul>
                 </section>
                 <section className='categories wrapper'>
-                    <div className='categoryHeading'>
+                    <div className='sectionHeading'>
                         <h2>Most in demand categories</h2>
                         <Link to="/" className='highlight'>
                             Explore all categories {'>'}
