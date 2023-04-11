@@ -140,21 +140,21 @@ const Home = () => {
                                         <img src={images.account} alt="" />
                                         <p>It takes 2 minutes to open an account.</p>
                                     </div>
-                                    <a href="#">OPEN ACCOUNT</a>
+                                    <Link to='/'>OPEN ACCOUNT</Link>
                                 </li>
                                 <li>
                                     <div className='cardHeading'>
                                         <img src={images.profile} alt="" />
                                         <p>Find talents or search for your dream job.</p>
                                     </div>
-                                    <a href="#">APPLY OR HIRE</a>
+                                    <Link to='/'>APPLY OR HIRE</Link>
                                 </li>
                                 <li>
                                     <div className='cardHeading'>
                                         <img src={images.apply} alt="" />
                                         <p>Get your work done quickly with Jobi.</p>
                                     </div>
-                                    <a href="#">PAYMENT METHOD</a>
+                                    <Link to='/'>PAYMENT METHOD</Link>
                                 </li>
                             </ul>
                         </div>
@@ -174,7 +174,7 @@ const Home = () => {
                                     ))
                                 }
                             </ul>
-                            <a href="#" className='button'>Learn more</a>
+                            <Link to='/' className='button'>Learn more</Link>
                         </div>
                         <div className='aboutImgContainer'>
                             <img src={images.about} alt="" />
