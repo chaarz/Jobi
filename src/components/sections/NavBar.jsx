@@ -3,34 +3,68 @@ import images from '../images';
 
 const NavBar = () => {
     return (
-        <div className='navBar'>
-            <div className='logo'>
-                <img src={images.jobiLogo} alt="Jobi logo" />
-            </div>
-            <nav className='desktopNav'>
-                <ul>
-                    <li>
-                        <NavLink to="/" className='highlight'>Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/jobList" className='highlight'>Jobs</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" className='highlight'>Explore</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" className='highlight'>Category</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/" className='highlight'>Pages</NavLink>
-                    </li>
-                </ul>
-                <div className="navButtons">
-                    <button className='loginBtn'>Login/Sign up</button>
-                    <button>Post a job</button>
+        <>
+            <div className='navBar'>
+                <div className='logo'>
+                    <img src={images.jobiLogo} alt="Jobi logo" />
                 </div>
-            </nav>
-        </div>
+                <nav className='desktopNav'>
+                    <ul>
+                        <li>
+                            <NavLink to="/" className='highlight'>Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/jobList" className='highlight'>Jobs</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/" className='highlight'>Explore</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/" className='highlight'>Category</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/" className='highlight'>Pages</NavLink>
+                        </li>
+                    </ul>
+                    <div className="navButtons">
+                        <button className='loginBtn'>Login/Sign up</button>
+                        <button>Post a job</button>
+                    </div>
+                </nav>
+            </div>
+            {/* Slide Out Nav */}
+            <div className="hamButtonContainer">
+                <button className="hamButton">
+                    <span></span>
+                    <span className="visually-hidden">Slide-Out Navigation Menu</span>{/*for screen readers only*/}
+                </button>
+            </div>
+            <div className="mobileNavContainer">
+                <nav className="mobileNav wrapper">
+                    <ul className="mobileNavLinks">
+                        <li className="mobileNavLink">
+                            <NavLink to="/" className='highlight'>Home</NavLink>
+                        </li>
+                        <li className="mobileNavLink">
+                            <NavLink to="/jobList" className='highlight'>Jobs</NavLink>
+                        </li>
+                        <li className="mobileNavLink">
+                            <NavLink to="/" className='highlight'>Explore</NavLink>
+                        </li>
+                        <li className="mobileNavLink">
+                            <NavLink to="/" className='highlight'>Category</NavLink>
+                        </li>
+                        <li className="mobileNavLink">
+                            <NavLink to="/" className='highlight'>Pages</NavLink>
+                        </li>
+                    </ul>
+                    <div className="navButtons">
+                        <button className='loginBtn'>Login/Sign up</button>
+                        <button>Post a job</button>
+                    </div>
+                </nav>
+            </div>
+        </>
     )
 }
 

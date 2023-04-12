@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .navBar{
     padding: 2rem 3rem;
@@ -11,7 +12,9 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
-    // gap: 7rem;
+    @include tablet{
+        display: none;
+    }
     ul{
         display: flex;
         align-items: center;
@@ -20,5 +23,107 @@
     .navButtons{
         display: flex;
         gap: 0.5rem;
+    }
+}
+
+// MOBILE NAVIGATION
+
+// 1. Hide the mobile navigation hamburger menu for desktop view
+
+.hamButtonContainer {
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
+
+// 2. Hamburger button
+
+.hamButton {
+    background-color: unset;
+    border-radius: unset;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: fixed;
+    top: 2.25rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    z-index: 40;
+    span,
+    span::before,
+    span::after {
+        display: block;
+        position: absolute;
+        height: 3px;
+        background-color: $secondaryColour;
+        transition: all 300ms ease;
+        width: 100%;
+        top: 15px;
+        left: 0;
+    }
+
+    span::before {
+        content: '';
+        top: -15px;
+    }
+
+    span::after {
+        content: '';
+        top: 15px;
+    }
+}
+
+// 3. Animate hamburger button when clicked as mobile navigation opens
+.hamButton.active {
+    span::before {
+        transform: rotate(-90deg) translate(-10px, 0px);
+        width: 100%;
+    }
+
+    span {
+        transform: rotate(45deg);
+        width: 100%;
+    }
+
+    span::after {
+        transform: rotate(90deg) translate(-10px, 0px);
+        width: 100%;
+    }
+}
+
+// 4. Make mobile nagivation menu slide out when hamburger button is clicked
+
+.mobileNavContainer.open {
+    transform: translateX(0%);
+}
+
+// 5. Style the mobile navigation menu 
+
+.mobileNavContainer {
+    background-color: $secondaryColour;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    // opacity: 0.95;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+
+    .mobileNavLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 30vh;
+        a {
+            font-family: $headingFont;
+            font-size: 2rem;
+        }
     }
 }
