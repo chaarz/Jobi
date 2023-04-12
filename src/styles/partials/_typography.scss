@@ -48,7 +48,7 @@ main a {
 
 h1 {
     font-family: $headingFont;
-    font-size: clamp(3.2rem, 5vw, 3.6rem);
+    font-size: clamp(3rem, 5vw, 3.6rem);
     font-weight: normal;
     color: $secondaryColour;
 }

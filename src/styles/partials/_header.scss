@@ -16,6 +16,9 @@ header{
             @include desktop{
                 width: 70%;
             }
+            @include tabletLandscape{
+                width: 100%;
+            }
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -35,7 +38,7 @@ header{
     form{
         display: flex;
         flex-wrap: wrap;
-        @include smallDesktop{
+        @include laptop{
             flex-direction: column;
             gap: .5rem;
         }
@@ -45,7 +48,7 @@ header{
             padding: 1rem 0;
             display: flex;
             flex: 2;
-            @include smallDesktop{
+            @include laptop{
                 justify-content: center;
                 padding: .75rem 0;
                 border-radius: .5rem;
@@ -55,7 +58,7 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                @include smallDesktop{
+                @include laptop{
                     width: 100%;
                     padding: 0 1rem;
                 }
@@ -74,7 +77,7 @@ header{
             border: none;
             border-radius: 0 .5rem .5rem 0;
             padding: 0.5rem 3rem;
-            @include smallDesktop{
+            @include laptop{
                 border-radius: .5rem;
                 align-self: center;
             }

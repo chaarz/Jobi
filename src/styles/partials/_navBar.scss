@@ -3,6 +3,9 @@
 
 .navBar{
     padding: 2rem 3rem;
+    @include laptop{
+        padding: 2rem 1rem;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
-    @include tablet{
+    @include tabletLandscape{
         display: none;
     }
     ul{
@@ -22,7 +25,13 @@
     }
     .navButtons{
         display: flex;
+        justify-content: flex-end;
         gap: 0.5rem;
+        button{
+            @include laptop{
+                padding: .5rem;
+            }
+        }
     }
 }
 
@@ -32,7 +41,7 @@
 
 .hamButtonContainer {
     display: none;
-    @include tablet{
+    @include tabletLandscape{
         display: block;
     }
 }

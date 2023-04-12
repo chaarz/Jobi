@@ -6,12 +6,18 @@
       }
 }
 
-@mixin smallDesktop {
-    @media (max-width: 1140px) {
+@mixin laptop {
+    @media (max-width: 1200px) {
       @content;
     }
 }
-  
+
+@mixin tabletLandscape {
+    @media (max-width: 1040px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: 750px) {
         @content;
