@@ -1,8 +1,12 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .wrapper{
     max-width: 1600px;
     width: 82.5%;
+    @include largeMobile{
+        width: 90%;
+    }
     margin: 0 auto;
 }
 
@@ -89,6 +93,9 @@ label{
 
 input{
     border: none;
+    @include tablet{
+        border-bottom: 1px solid $grey;
+    }
     &:hover, &:focus{
     border-bottom: 2px solid $quaternaryColour;
     }

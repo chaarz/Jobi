@@ -28,6 +28,10 @@ select {
     letter-spacing: 1.2px;
 }
 
+select{
+     font-size: clamp(.8rem, 2vw, $baseFontSize)
+}
+
 button {
     font-size: 0.8rem;
 }
@@ -48,7 +52,7 @@ main a {
 
 h1 {
     font-family: $headingFont;
-    font-size: clamp(3rem, 5vw, 3.6rem);
+    font-size: clamp(2.8rem, 5vw, 3.6rem);
     font-weight: normal;
     color: $secondaryColour;
 }
