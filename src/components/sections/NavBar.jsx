@@ -1,7 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import images from '../images';
 
 const NavBar = () => {
+    const [isActive, setIsActive] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleMobileNav = () => {
+        setIsOpen(!isOpen);
+        setIsActive(!isActive);
+    }
     return (
         <>
             <div className='navBar'>
@@ -34,33 +41,33 @@ const NavBar = () => {
             </div>
             {/* Slide Out Nav */}
             <div className="hamButtonContainer">
-                <button className="hamButton">
+                <button className={isActive ? " hamButton active" : "hamButton"} onClick={toggleMobileNav} >
                     <span></span>
                     <span className="visually-hidden">Slide-Out Navigation Menu</span>{/*for screen readers only*/}
                 </button>
             </div>
-            <div className="mobileNavContainer">
+            <div className={isOpen ? "mobileNavContainer open" : "mobileNavContainer"}>
                 <nav className="mobileNav wrapper">
                     <ul className="mobileNavLinks">
-                        <li className="mobileNavLink">
+                        <li className="mobileNavLink" onClick={toggleMobileNav} >
                             <NavLink to="/" className='highlight'>Home</NavLink>
                         </li>
-                        <li className="mobileNavLink">
+                        <li className="mobileNavLink" onClick={toggleMobileNav} >
                             <NavLink to="/jobList" className='highlight'>Jobs</NavLink>
                         </li>
-                        <li className="mobileNavLink">
-                            <NavLink to="/" className='highlight'>Explore</NavLink>
+                        <li className="mobileNavLink" onClick={toggleMobileNav} >
+                            <NavLink to="/" className='highlight' >Explore</NavLink>
                         </li>
-                        <li className="mobileNavLink">
+                        <li className="mobileNavLink" onClick={toggleMobileNav} >
                             <NavLink to="/" className='highlight'>Category</NavLink>
                         </li>
-                        <li className="mobileNavLink">
+                        <li className="mobileNavLink" onClick={toggleMobileNav} >
                             <NavLink to="/" className='highlight'>Pages</NavLink>
                         </li>
                     </ul>
                     <div className="navButtons">
-                        <button className='loginBtn'>Login/Sign up</button>
-                        <button>Post a job</button>
+                        <button className='loginBtn' onClick={toggleMobileNav}>Login/Sign up</button>
+                        <button onClick={toggleMobileNav}>Post a job</button>
                     </div>
                 </nav>
             </div>
