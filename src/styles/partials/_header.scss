@@ -28,8 +28,6 @@ header{
 }
 
 .searchFormContainer{
-    border-radius: .5rem;
-    background-color: $secondaryColour;
     width: 70%;
     @include desktop{
         width: 90%;
@@ -40,15 +38,17 @@ header{
         @include smallDesktop{
             flex-direction: column;
             gap: .5rem;
-            padding: .5rem 0;
         }
         .flexContainer{
+            border-radius: .5rem 0 0 .5rem;
+            background-color: $secondaryColour;
             padding: 1rem 0;
             display: flex;
             flex: 2;
             @include smallDesktop{
                 justify-content: center;
-                padding: unset;
+                padding: .75rem 0;
+                border-radius: .5rem;
             }
             .searchForm{
                 padding: 0 2rem;
@@ -57,6 +57,7 @@ header{
                 align-items: flex-start;
                 @include smallDesktop{
                     width: 100%;
+                    padding: 0 1rem;
                 }
             }
             .category{
@@ -80,3 +81,4 @@ header{
         }
     }
 }
+
