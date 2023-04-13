@@ -24,65 +24,67 @@ const Footer = () => {
             </div>
             <div className='mainFooter wrapper'>
                 <div className='footerFlexContainer'>
-                    <div>
-                        <img src={images.jobiLogoBlack} alt="Jobi logo" />
-                    </div>
-                    <div>
-                        <h3>Links</h3>
-                        <ul>
-                            <li>
-                                <Link to="/">Pricing</Link>
-                            </li>
-                            <li>
-                                <Link to="/">About Us</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Careers</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Blog</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Products</h3>
-                        <ul>
-                            <li>
-                                <Link to="/">Take the tour</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Live chat</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Self-service</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Mobile</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Collaboration</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Reviews</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Legal</h3>
-                        <ul>
-                            <li>
-                                <Link to="/">Terms of use</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Terms & Conditions</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Privacy</Link>
-                            </li>
-                            <li>
-                                <Link to="/">Cookie policy</Link>
-                            </li>
-                        </ul>
+                    <div className='footerMenu'>
+                        <div className='logo'>
+                            <img src={images.jobiLogoBlack} alt="Jobi logo" />
+                        </div>
+                        <div className='footerList'>
+                            <h3>Links</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/">Pricing</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">About Us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Careers</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Blog</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='footerList'>
+                            <h3>Products</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/">Take the tour</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Live chat</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Self-service</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Mobile</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Collaboration</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Reviews</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='footerList'>
+                            <h3>Legal</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/">Terms of use</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Terms & Conditions</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Privacy</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Cookie policy</Link>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className='newsletter'>
                         <h3>Newsletter</h3>

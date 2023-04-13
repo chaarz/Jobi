@@ -42,12 +42,51 @@ footer{
         .footerFlexContainer{
             padding: 3rem 0;
             display: flex;
-            flex-wrap: wrap;
+            @include laptop{
+                flex-direction: column;
+            }
+            // @include largeMobile{
+            //     align-items: center;
+            //     text-align: center;
+            // }
             justify-content: space-between;
-            ul li{
-                padding-bottom: 0.5rem;
+            gap: 2rem;
+            .footerMenu{
+                display: flex;
+                @include largeMobile{
+                    flex-direction: column;
+                }
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex: 1;
+                @include tablet{
+                    // gap: 1rem;
+                }
+                .logo{
+                    @include tablet{
+                        width: 100%;
+                    }
+                }
+                .footerList{
+                    @include tablet{
+                        padding-top: 1rem;
+                    }
+                    // @include largeMobile{
+                    //     align-self: center;
+                    //     text-align: center;
+                    // }
+                    padding: 0 .5rem;
+                    ul li{
+                        padding-bottom: 0.5rem;
+                    }
+                }
             }
             .newsletter {
+                align-self: flex-start;
+                // @include largeMobile{
+                //     align-self: center;
+                //     text-align: center;
+                // }
                 form{
                     display: flex;
                     flex-wrap: wrap;
@@ -57,7 +96,6 @@ footer{
                     background-color: $lightGrey;
                     input{
                         border-bottom: unset;
-                        // width: 80%;
                     }
                 }
                 .note{
@@ -71,8 +109,20 @@ footer{
     .bottomFooter{
         display: flex;
         justify-content: space-between;
+        @include tablet{
+            flex-direction: column;
+            gap: 1rem;
+            p{
+                order: 3;
+                align-self: center;
+            }
+        }
+        @include largeMobile{
+            align-items: center;
+        }
         .flexContainer{
             display: flex;
+            align-items: center;
             gap: 1rem;
             font-weight: 600;
         }
