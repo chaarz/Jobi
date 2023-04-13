@@ -59,7 +59,7 @@ h1 {
 
 h2 {
     font-family: $headingFont;
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 400;
 }
 
@@ -94,6 +94,11 @@ footer {
 
     a {
         color: $primaryColour;
+    }
+
+    input{
+        font-size: 0.8rem;
+
     }
 }
 
