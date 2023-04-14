@@ -67,12 +67,13 @@
             margin: 2%;
         }
         @include mobile{
-            width: unset;
-            // margin: unset;
+            width: 100%;
         }
         position: relative;
         img{
             height: 100%;
+            max-height: 370px;
+            width: 100%;
         }
         p{
             color: $secondaryColour;
