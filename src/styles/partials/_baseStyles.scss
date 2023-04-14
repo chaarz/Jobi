@@ -95,6 +95,13 @@ label{
     padding-bottom: .5rem;
 }
 
+footer h3 {
+    padding-bottom: 1rem;
+    @include largeMobile{
+        padding-bottom: .25rem;
+    }
+}
+
 input{
     border: none;
     @include tablet{

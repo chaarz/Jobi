@@ -42,18 +42,22 @@ footer{
         .footerFlexContainer{
             padding: 3rem 0;
             display: flex;
+            justify-content: space-between;
+            gap: 2rem;
             @include laptop{
                 flex-direction: column;
             }
             @include largeMobile{
+                padding: 2rem 0;
                 flex-direction: column-reverse;
+                gap: 1rem;
             }
-            justify-content: space-between;
-            gap: 2rem;
             .footerMenu{
                 display: flex;
                 @include largeMobile{
                     flex-direction: column;
+                    gap: 1rem;
+                    align-items: center;
                 }
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -61,7 +65,10 @@ footer{
                 .logo{
                     @include tablet{
                         width: 100%;
-                        padding-bottom: 2rem;
+                        padding-bottom: 1rem;
+                    }
+                    @include largeMobile{
+                        width: unset;
                     }
                 }
                 .footerList{
@@ -69,8 +76,17 @@ footer{
                         width: calc(100%/3 - 2%);
                         margin: 1%;
                     }
-                    ul li{
-                        padding-bottom: 0.5rem;
+                    @include largeMobile{
+                        width: unset;
+                        text-align: center;
+                    }
+                    ul{
+                        li{
+                            padding-bottom: 0.5rem;
+                            @include largeMobile{
+                                padding-bottom: unset;
+                            }
+                        }
                     }
                 }
             }
