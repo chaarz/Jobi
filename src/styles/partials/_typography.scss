@@ -94,6 +94,7 @@ footer {
 
     a {
         color: $primaryColour;
+        font-size: clamp(0.7rem, 2vw, 0.8rem)
     }
 
     input{

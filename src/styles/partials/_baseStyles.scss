@@ -70,6 +70,9 @@ a {
 
 section, footer{
     padding: 3rem 0;
+    @include tablet{
+        padding: 2rem 0;
+    }
 }
 
 ul,
