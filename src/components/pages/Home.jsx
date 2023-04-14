@@ -115,34 +115,33 @@ const Home = () => {
                 <section className='howItWorks'>
                     <div className='wrapper flex'>
                         <div className='howItWorksHeading'>
-                            <img src={images.videoPayBtn} alt="video play button" />
-                            <h2>Let's get started
-                                It's <span>simple.</span>
+                            <img src={images.videoPayBtn} alt="video play button" aria-hidden='true' />
+                            <h2>Let's get started <br/>It's <span>simple.</span>
                             </h2>
                             <p>Get access to our top talents as well as a complete set of hybrid workforce management tools.</p>
                         </div>
                         <div className='cards'>
                             <ul>
                                 <li>
-                                    <div className='cardHeading'>
-                                        <img src={images.account} alt="" />
+                                    <img src={images.account} alt="account image" aria-hidden='true'/>
+                                    <div className='cardText'>
                                         <p>It takes 2 minutes to open an account.</p>
+                                        <Link to='/'>OPEN ACCOUNT</Link>
                                     </div>
-                                    <Link to='/'>OPEN ACCOUNT</Link>
                                 </li>
                                 <li>
-                                    <div className='cardHeading'>
-                                        <img src={images.profile} alt="" />
+                                    <img src={images.profile} alt="profile image" aria-hidden='true'/>
+                                    <div className='cardText'>
                                         <p>Find talents or search for your dream job.</p>
+                                        <Link to='/'>APPLY OR HIRE</Link>
                                     </div>
-                                    <Link to='/'>APPLY OR HIRE</Link>
                                 </li>
                                 <li>
-                                    <div className='cardHeading'>
-                                        <img src={images.apply} alt="" />
+                                    <img src={images.apply} alt="apply image" aria-hidden='true'/>
+                                    <div className='cardText'>
                                         <p>Get your work done quickly with Jobi.</p>
+                                        <Link to='/'>PAYMENT METHOD</Link>
                                     </div>
-                                    <Link to='/'>PAYMENT METHOD</Link>
                                 </li>
                             </ul>
                         </div>
