@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .jobHeading{
     background-color: $tertiaryColour;
@@ -8,12 +9,18 @@
 .jobDetails{
     .jobInfo{
         padding: 0 3rem;
+        @include tablet{
+            padding: 0 1rem;
+        }
+        @include largeMobile{
+            padding: 0 .5rem;
+        }
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
         p, li{
-            font-size: 0.85rem;
+            font-size: clamp(.6rem, 3vw, 0.85rem);
             line-height: 1.75;
         }
     }
