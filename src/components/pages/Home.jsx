@@ -50,7 +50,7 @@ const Home = () => {
                 <section className='categories wrapper'>
                     <div className='sectionHeading'>
                         <h2>Most in demand categories</h2>
-                        <Link to="/" className='highlight'>
+                        <Link to="/" className='highlight end'>
                             Explore all categories {'>'}
                         </Link>
                     </div>
@@ -84,7 +84,7 @@ const Home = () => {
                 <section className='trending wrapper'>
                     <div className='sectionHeading'>
                         <h2>Trending Jobs</h2>
-                        <div>
+                        <div className='end'>
                             <button className='prevNextBtn'>
                                 <FontAwesomeIcon icon={faArrowLeft} />
                             </button>
@@ -214,7 +214,7 @@ const Home = () => {
                 <section className='jobiGuides wrapper'>
                     <div className='sectionHeading'>
                         <h2>Jobi Guides</h2>
-                        <Link to="/" className='highlight'>
+                        <Link to="/" className='highlight end'>
                             Explore more {'>'}
                         </Link>
                     </div>

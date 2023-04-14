@@ -28,7 +28,6 @@
         justify-content: flex-start;
         gap: 1.5rem;
         .category{
-            // width: calc(100%/6 - 4%);
             padding: .75rem 1.25rem;
             display: flex;
             align-items: center;
@@ -63,6 +62,14 @@
     li{
         width: calc((100%/4) - 3%);
         margin: 1.5%;
+        @include tablet{
+            width: calc((100%/2) - 4%);
+            margin: 2%;
+        }
+        @include mobile{
+            width: unset;
+            // margin: unset;
+        }
         position: relative;
         img{
             height: 100%;
@@ -74,6 +81,7 @@
             position: absolute;
             bottom: 0;
             padding: 1rem;
+            width: 100%;
         }
     }
 }
@@ -211,7 +219,7 @@
     align-items: center;
     h3{
         font-family: $headingFont;
-        font-size: 1.2rem;
+        font-size: clamp(0.8rem, 4vw, 1.2rem);
         font-weight: unset;
         line-height: 2.25;
         color: #005025;
@@ -235,9 +243,15 @@
     .testimonialCards{
         ul{
             display: flex;
+            @include tablet{
+                flex-direction: column;
+            }
             li{
                 width: calc((100%/2) - 6%);
                 margin: 3%;
+                @include tablet{
+                    width: unset;
+                }
                 padding: 2rem;
                 background-color: $secondaryColour;
                 border-radius: .3rem;

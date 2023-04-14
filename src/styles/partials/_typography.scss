@@ -71,6 +71,7 @@ h3 {
 
 p {
     line-height: 1.9;
+    font-size: clamp(0.7rem, 1vw, $baseFontSize);
 
 }
 
