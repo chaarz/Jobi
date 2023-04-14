@@ -92,8 +92,12 @@ footer{
             }
             .newsletter{
                 align-self: flex-start;
+                @include largeMobile{
+                    width: 100%;
+                }
                 form{
                     display: flex;
+                    justify-content: space-between;
                     flex-wrap: wrap;
                     margin: 1rem 0;
                     padding: 0.5rem 1rem;

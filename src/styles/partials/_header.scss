@@ -5,6 +5,9 @@ header{
     background-color: $tertiaryColour;
     .heading{
         padding: 3rem 0;
+        @include largeMobile{
+            padding: 2rem 0;
+        }
         text-align: center;
         width: 100%;
         display: flex;

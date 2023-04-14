@@ -73,6 +73,9 @@ section, footer{
     @include tablet{
         padding: 2rem 0;
     }
+    @include largeMobile{
+        padding: 1rem 0;
+    }
 }
 
 ul,
