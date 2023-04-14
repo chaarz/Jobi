@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .jobList{
     .jobListSort{
@@ -18,9 +19,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include tablet{
+                flex-direction: column;
+            }
             .flex{
                 display: flex;
                 flex-direction: column;
+                @include tablet {
+                    flex-direction: unset;
+                }
                 gap: .75rem;
             }
             .jobTitle{
@@ -28,17 +35,23 @@
                 align-items: center;
                 gap: 1rem;
                 width: 35%;
+                @include tablet{
+                    width: 100%;
+                }
             }
-            .jobCardType{
+            .jobCardType, .jobCardDetails{
                 width: 25%;
-            }
-            .jobCardDetails{
-                width: 25%;
+                @include tablet {
+                    width: unset;
+                }
             }
             .jobCardBtn{
                 width: 15%;
                 display: flex;
                 gap: .75rem;
+                @include tablet {
+                    width: unset;
+                }
             }
         }
     }
