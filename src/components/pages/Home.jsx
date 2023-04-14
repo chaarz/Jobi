@@ -55,41 +55,29 @@ const Home = () => {
                         </Link>
                     </div>
                     <ul>
-                        <li>
-                            <div className='category category1'>
-                                <img src={images.uiuxdesign} alt="pencil icon" aria-hidden='true' />
-                                <p>UI/UX Design</p>
-                            </div>
+                        <li className='category category1'>
+                            <img src={images.uiuxdesign} alt="pencil icon" aria-hidden='true' />
+                            <p>UI/UX Design</p>
                         </li>
-                        <li>
-                            <div className='category category2'>
-                                <img src={images.development} alt="html tag icon" aria-hidden='true' />
-                                <p>Development</p>
-                            </div>
+                        <li className='category category2'>
+                            <img src={images.development} alt="html tag icon" aria-hidden='true' />
+                            <p>Development</p>
                         </li>
-                        <li>
-                            <div className='category category3'>
-                                <img src={images.marketing} alt="bag icon" aria-hidden='true' />
-                                <p>Marketing</p>
-                            </div>
+                        <li className='category category3'>
+                            <img src={images.marketing} alt="bag icon" aria-hidden='true' />
+                            <p>Marketing</p>
                         </li>
-                        <li>
-                            <div className='category category4'>
-                                <img src={images.telemarketing} alt="phone icon" aria-hidden='true' />
-                                <p>Telemarketing</p>
-                            </div>
+                        <li className='category category4'>
+                            <img src={images.telemarketing} alt="phone icon" aria-hidden='true' />
+                            <p>Telemarketing</p>
                         </li>
-                        <li>
-                            <div className='category category5'>
-                                <img src={images.accounting} alt="accounting icon" aria-hidden='true' />
-                                <p>Accounting</p>
-                            </div>
+                        <li className='category category5'>
+                            <img src={images.accounting} alt="accounting icon" aria-hidden='true' />
+                            <p>Accounting</p>
                         </li>
-                        <li>
-                            <div className='category category6'>
-                                <img src={images.editing} alt="editing icon" aria-hidden='true' />
-                                <p>Editing</p>
-                            </div>
+                        <li className='category category6'>
+                            <img src={images.editing} alt="editing icon" aria-hidden='true' />
+                            <p>Editing</p>
                         </li>
                     </ul>
                 </section>
@@ -284,7 +272,7 @@ const Home = () => {
                         </div>
                         <p>We collaborate with a number of top tier companies on imagining the future of work. Have a look!</p>
                         <Link to='/' className='highlight'>
-                            Learn more 
+                            Learn more
                             <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
                         </Link>
                     </div>
