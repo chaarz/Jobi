@@ -242,9 +242,6 @@
             @include tabletLandscape{
                 width: clamp(60%, 80%, 100%);
             }
-            // @include tablet{
-            //     width: unset;
-            // }
             color: $secondaryColour;
         }
         button{

@@ -24,14 +24,6 @@
                 align-items: flex-start;
                 gap: .5rem;
             }
-            .flex{
-                display: flex;
-                flex-direction: column;
-                @include tablet {
-                    flex-direction: unset;
-                }
-                gap: .75rem;
-            }
             .jobTitle{
                 display: flex;
                 align-items: center;
@@ -41,15 +33,22 @@
                     width: 100%;
                 }
             }
-            .jobCardType, .jobCardDetails{
+            .flex{
                 width: 25%;
+                display: flex;
+                flex-direction: column;
                 @include tablet {
-                    width: unset;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
                 }
+                gap: .75rem;
             }
             .jobCardBtn{
                 width: 15%;
                 display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
                 gap: .75rem;
                 @include tablet {
                     width: unset;
