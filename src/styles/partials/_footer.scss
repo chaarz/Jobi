@@ -99,15 +99,19 @@ footer{
                     display: flex;
                     justify-content: space-between;
                     margin: 1rem 0;
+                    padding: .5rem 1rem;
                     @include largeMobile{
                         margin: .5rem 0;
+                        padding: .5rem;
                     }
-                    padding: 0.5rem 1rem;
-                    border-radius: 0.5rem;
+                    border-radius: .5rem;
                     background-color: $lightGrey;
                     input{
                         border-bottom: unset;
                         letter-spacing: normal;
+                        @include mobile{
+                            width: 70%;
+                        }
                     }
                 }
                 .note{

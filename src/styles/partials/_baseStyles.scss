@@ -43,6 +43,7 @@ button, .button{
     padding: .8rem 1rem;
     color: $primaryColour;
     background-color: unset;
+    transition: 0.3s;
     &:hover, &:focus{
         color: $secondaryColour;
         background-color: $quaternaryColour;
@@ -109,13 +110,19 @@ footer h3, .jobInfo h3 {
     }
 }
 
-input{
-    border: none;
-    @include tablet{
-        border-bottom: 1px solid $grey;
+form{
+    label{
+        text-align: start;
+        align-self: flex-start;
     }
-    &:hover, &:focus{
-    border-bottom: 2px solid $quaternaryColour;
+    input{
+        border: none;
+        @include tablet{
+            border-bottom: 1px solid $grey;
+        }
+        &:hover, &:focus{
+        border-bottom: 2px solid $quaternaryColour;
+        }
     }
 }
 
@@ -132,6 +139,7 @@ select{
     &:hover,
     &:focus {
         color: $quaternaryColour;
+        // transform: scale(1.1);
     }
 }
 

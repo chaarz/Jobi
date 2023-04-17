@@ -270,9 +270,9 @@ const Home = () => {
                             <h2>Collaboration with Top Brands</h2>
                         </div>
                         <p>We collaborate with a number of top tier companies on imagining the future of work. Have a look!</p>
-                        <Link to='/' className='highlight'>
-                            Learn more
-                            <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
+                        <Link to='/' className='highlight learnMore'>
+                            <span>Learn more</span>
+                            <FontAwesomeIcon icon={faArrowRightLong} class='icon'/>
                         </Link>
                     </div>
                 </section>

@@ -38,9 +38,6 @@ header{
     @include desktop{
         width: 90%;
     }
-    // @include tablet{
-    //     width: 70%;
-    // }
     @include largeMobile{
         width: 100%;
     }
@@ -52,6 +49,7 @@ header{
             gap: .5rem;
         }
         .flexContainer{
+            max-width: 100%;
             border-radius: .5rem 0 0 .5rem;
             background-color: $secondaryColour;
             padding: 1rem 0;
@@ -92,9 +90,6 @@ header{
                 }
                 align-items: unset;
                 width: 100%;
-                label{
-                    align-self: flex-start;
-                }
             }
         }
         button{
