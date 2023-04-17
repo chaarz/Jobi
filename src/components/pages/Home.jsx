@@ -1,26 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import images from '../images';
 import Header from '../sections/Header';
-import AboutAccordion from '../../utils/AboutAccordion';
+import About from '../sections/About';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
-    const accordionData = [
-        {
-            title: 'Seamless Search',
-            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
-        },
-        {
-            title: 'Hire top talents',
-            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
-        },
-        {
-            title: 'Protected Payments, every time',
-            content: `It only takes 5 minutes. Set-up is smooth and simple, with fully customisable page design to reflect your brand.`
-        }
-    ];
-
     return (
         <>
             <Header />
@@ -147,25 +132,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='about wrapper'>
-                    <div className='aboutTextContainer'>
-                        <div>
-                            <p>Why choose us ?</p>
-                            <h2>World of talent at your fingertips</h2>
-                        </div>
-                        <ul>
-                            {
-                                accordionData.map(({ title, content }) => (
-                                    < AboutAccordion title={title} content={content} key={title} />
-                                ))
-                            }
-                        </ul>
-                        <Link to='/' className='button'>Learn more</Link>
-                    </div>
-                    <div className='aboutImgContainer'>
-                        <img src={images.about} alt="" />
-                    </div>
-                </section>
+                <About />
                 <section className='testimonials'>
                     <div className='wrapper'>
                         <div className='sectionHeading'>
@@ -272,7 +239,7 @@ const Home = () => {
                         <p>We collaborate with a number of top tier companies on imagining the future of work. Have a look!</p>
                         <Link to='/' className='highlight learnMore'>
                             <span>Learn more</span>
-                            <FontAwesomeIcon icon={faArrowRightLong} class='icon'/>
+                            <FontAwesomeIcon icon={faArrowRightLong} className='icon'/>
                         </Link>
                     </div>
                 </section>

@@ -37,7 +37,7 @@ button {
 }
 
 a {
-    font-size: 0.8rem;
+    font-size: clamp(.7rem, 2vw, 0.8rem);
     color: $secondaryColour;
 }
 

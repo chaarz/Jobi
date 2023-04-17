@@ -32,16 +32,16 @@ const Footer = () => {
                             <h3>Links</h3>
                             <ul>
                                 <li>
-                                    <Link to="/">Pricing</Link>
+                                    <Link to="/" className='highlight'>Pricing</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">About Us</Link>
+                                    <Link to="/about" className='highlight'>About Us</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Careers</Link>
+                                    <Link to="/" className='highlight'>Careers</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Blog</Link>
+                                    <Link to="/" className='highlight'>Blog</Link>
                                 </li>
                             </ul>
                         </div>
@@ -49,22 +49,22 @@ const Footer = () => {
                             <h3>Products</h3>
                             <ul>
                                 <li>
-                                    <Link to="/">Take the tour</Link>
+                                    <Link to="/" className='highlight'>Take the tour</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Live chat</Link>
+                                    <Link to="/" className='highlight'>Live chat</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Self-service</Link>
+                                    <Link to="/" className='highlight'>Self-service</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Mobile</Link>
+                                    <Link to="/" className='highlight'>Mobile</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Collaboration</Link>
+                                    <Link to="/" className='highlight'>Collaboration</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Reviews</Link>
+                                    <Link to="/" className='highlight'>Reviews</Link>
                                 </li>
                             </ul>
                         </div>
@@ -72,16 +72,16 @@ const Footer = () => {
                             <h3>Legal</h3>
                             <ul>
                                 <li>
-                                    <Link to="/">Terms of use</Link>
+                                    <Link to="/" className='highlight'>Terms of use</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Terms & Conditions</Link>
+                                    <Link to="/" className='highlight'>Terms & Conditions</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Privacy</Link>
+                                    <Link to="/" className='highlight'>Privacy</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Cookie policy</Link>
+                                    <Link to="/" className='highlight'>Cookie policy</Link>
                                 </li>
                             </ul>
                         </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                         <p>Join & receive important updates</p>
                         <form action='#'>
                             <label htmlFor="email" className='sr-only'>Enter your email</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                            <input className='highlight' type="email" id="email" name="email" placeholder="Enter your email" required />
                             <button type='submit'>Send</button>
                         </form>
                         <p className='note'>We only send emails with relevant content</p>

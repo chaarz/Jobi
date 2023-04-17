@@ -390,10 +390,9 @@
             gap: .5rem;
             text-decoration: none;
             font-family: $headingFont;
-            font-size: 0.8rem;
             transition: 0.3s;
             &:hover, &:focus{
-                font-size: $baseFontSize;
+                transform: scale(1.1)
             }
         }
     }
