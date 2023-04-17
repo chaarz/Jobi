@@ -98,13 +98,13 @@ footer{
                 form{
                     display: flex;
                     justify-content: space-between;
-                    flex-wrap: wrap;
                     margin: 1rem 0;
                     padding: 0.5rem 1rem;
                     border-radius: 0.5rem;
                     background-color: $lightGrey;
                     input{
                         border-bottom: unset;
+                        letter-spacing: normal;
                     }
                 }
                 .note{
