@@ -1,4 +1,4 @@
-import { NavLink} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import images from '../images';
 import Header from '../sections/Header';
 
@@ -16,7 +16,7 @@ const ErrorPage = () => {
                     <h1>404</h1>
                     <h2>Page Not Found</h2>
                     <div className='button'>
-                        <NavLink to="/">Go Back</NavLink>
+                        <Link to="/">Go Back</Link>
                     </div>
                 </div>
             </section>

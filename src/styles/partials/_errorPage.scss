@@ -1,13 +1,23 @@
 @use 'variables' as *;
+@use 'mediaQueries' as *;
 
 .errorPage{
     display: flex;
     gap: 2rem;
+    @include tablet {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    @include largeMobile{
+        padding-bottom: unset;
+        gap: unset;
+    }
     .imgContainer{
         flex: 1;
+        flex-shrink: 0;
         text-align: center;
         a{
-            color: $grey;
+            color: $secondaryColour;
             font-size: 0.7rem;
         }
     }
@@ -17,6 +27,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        @include largeMobile{
+            align-items: center;
+            text-align: center;
+        }
         gap: 1rem;
     }
 }
