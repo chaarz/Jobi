@@ -168,9 +168,9 @@ const Home = () => {
                 </section>
                 <section className='testimonials'>
                     <div className='wrapper'>
-                        <div className='testimonialsHeading'>
+                        <div className='sectionHeading'>
                             <h2>What our clients say about us</h2>
-                            <div>
+                            <div className='end'>
                                 <button className='prevNextBtn'>
                                     <FontAwesomeIcon icon={faArrowLeft} />
                                 </button>

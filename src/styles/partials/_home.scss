@@ -130,10 +130,16 @@
                     align-items: flex-start;
                     gap: 1rem;
                     padding: 1rem;
+                    @include largeMobile{
+                        padding: .5rem;
+                    }
                     background-color: $secondaryColour;
                     border-radius: .3rem;
                     img{
                         width: 3rem;
+                        @include largeMobile{
+                            width: 2rem;
+                        }
                     }
                     .cardText{
                         display: flex;
@@ -175,7 +181,7 @@
         }
         p{
             color: $quaternaryColour;
-            font-size: 0.9rem;
+            font-size: clamp(0.7rem, 1vw, 0.9rem);
             line-height: 1.75;
         }
         ul{
@@ -220,25 +226,32 @@
     align-items: center;
     h3{
         font-family: $headingFont;
-        font-size: clamp(0.8rem, 4vw, 1.2rem);
+        font-size: clamp(0.7rem, 3vw, 1.2rem);
         font-weight: unset;
         line-height: 2.25;
         color: #005025;
+        text-align: start;
     }
 }
 
 .testimonials{
     background-color: $grey;
-    .testimonialsHeading{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+    .sectionHeading{
         h2{
             width: 50%;
+            @include tabletLandscape{
+                width: clamp(60%, 80%, 100%);
+            }
+            // @include tablet{
+            //     width: unset;
+            // }
             color: $secondaryColour;
         }
         button{
             color: $secondaryColour;
+        }
+        .end{
+            align-self: flex-end;
         }
     }
     .testimonialCards{
@@ -254,11 +267,17 @@
                     width: unset;
                 }
                 padding: 2rem;
+                @include largeMobile{
+                    padding: 1rem;
+                }
                 background-color: $secondaryColour;
                 border-radius: .3rem;
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
+                @include largeMobile{
+                    gap: 1rem;
+                }
                 .cardHeading p{
                     color: $quaternaryColour;
                 }
@@ -267,6 +286,9 @@
                     flex-direction: column;
                     justify-content: space-between;
                     gap: 2rem;
+                    @include largeMobile{
+                        gap: 1rem;
+                    }
                     height: 100%;
                     .client{
                         display: flex;
@@ -360,8 +382,11 @@
         }
         p{
             color: $primaryColour;
-            font-size: 1.2rem;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
             line-height: 2.15;
+            @include largeMobile{
+                line-height: 1.5;
+            }
         }
         a{
             text-decoration: none;

@@ -99,6 +99,9 @@ footer{
                     display: flex;
                     justify-content: space-between;
                     margin: 1rem 0;
+                    @include largeMobile{
+                        margin: .5rem 0;
+                    }
                     padding: 0.5rem 1rem;
                     border-radius: 0.5rem;
                     background-color: $lightGrey;
@@ -109,7 +112,7 @@ footer{
                 }
                 .note{
                     color: $grey;
-                    font-size: 0.7rem;
+                    font-size: clamp(0.65rem, 2vw, 0.7rem);
                 }
             }
         }
@@ -124,6 +127,9 @@ footer{
             align-items: center;
             width: 100%;
             gap: 2rem;
+            @include largeMobile{
+                gap: 1rem;
+            }
             p{
                 order: 3;
             }
