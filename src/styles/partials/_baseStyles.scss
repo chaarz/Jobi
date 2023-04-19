@@ -40,7 +40,8 @@ button, .button{
     color: $primaryColour;
     font-size: 1rem;
     &:hover, &:focus{
-        border: none;
+        border: unset;
+        background-color: unset;
     }
 }
 

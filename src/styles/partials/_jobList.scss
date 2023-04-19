@@ -14,8 +14,12 @@
         gap: 1rem;
         li{
             padding: 1rem;
-            border: 1px solid $grey;
+            border: 1px solid $tertiaryColour;
             border-radius: .5rem;
+            transition: 0.3s;
+            &:hover, &:focus{
+                background-color: $lightGrey;
+            }
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -45,6 +49,9 @@
                     flex-direction: row;
                     justify-content: space-between;
                 }
+                @include largeMobile{
+                    flex-direction: column;
+                }
                 gap: .75rem;
             }
             .jobCardBtn{
@@ -54,7 +61,8 @@
                 flex-wrap: wrap;
                 gap: .75rem;
                 @include tablet {
-                    width: unset;
+                    width: 100%;
+                    justify-content: space-around;
                     align-self: center;
                 }
             }
