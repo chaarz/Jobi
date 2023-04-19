@@ -226,7 +226,7 @@
     align-items: center;
     h3{
         font-family: $headingFont;
-        font-size: clamp(0.7rem, 3vw, 1.2rem);
+        font-size: clamp(0.8rem, 4vw, 1.2rem);
         font-weight: unset;
         line-height: 2.25;
         color: #005025;
@@ -392,9 +392,9 @@
             text-decoration: none;
             font-family: $headingFont;
             transition: 0.3s;
-            &:hover, &:focus{
-                transform: scale(1.1)
-            }
+            // &:hover, &:focus{
+            //     transform: scale(1.1)
+            // }
         }
     }
 }

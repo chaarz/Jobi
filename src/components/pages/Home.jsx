@@ -240,7 +240,7 @@ const Home = () => {
                         <p>We collaborate with a number of top tier companies on imagining the future of work. Have a look!</p>
                         <Link to='/' className='highlight learnMore'>
                             <span>Learn more</span>
-                            <FontAwesomeIcon icon={faArrowRightLong} className='icon'/>
+                            <FontAwesomeIcon icon={faArrowRightLong} className="icon" />
                         </Link>
                     </div>
                 </section>
