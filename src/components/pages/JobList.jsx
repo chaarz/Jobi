@@ -5,6 +5,8 @@ import JobSamples from '../JobSamples';
 import { getDatabase, ref, onValue, push, set } from 'firebase/database';
 import firebase from '../firebase';
 import Header from '../sections/Header';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 
 const JobList = () => {
     const [jobs, setJobs] = useState([]);
@@ -50,7 +52,9 @@ const JobList = () => {
                                     key={job.id}>
                                     <li>
                                         <div className='jobTitle'>
-                                            <img src={images.profile} alt="company logo" />
+                                            <div className='companyLogo'>
+                                                <img src={images.profile} alt="company logo" />
+                                            </div>
                                             <p>{job.title}</p>
                                         </div>
                                         <div className='jobCardType flex'>
@@ -62,8 +66,8 @@ const JobList = () => {
                                             <p>{job.category}</p>
                                         </div>
                                         <div className='jobCardBtn'>
-                                            <button className='saveJobBtn'>
-                                                <img src={images.bookmark} alt="bookmark icon" />
+                                            <button className='saveJobBtn highlight'>
+                                                <FontAwesomeIcon icon={faBookmark} />
                                             </button>
                                             <button>APPLY</button>
                                         </div>

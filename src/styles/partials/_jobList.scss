@@ -29,6 +29,9 @@
                 align-items: center;
                 gap: 1rem;
                 width: 35%;
+                .companyLogo img{
+                    max-width: 3rem;
+                }
                 @include tablet{
                     width: 100%;
                 }

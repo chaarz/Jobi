@@ -18,12 +18,7 @@ button, .button{
     border: none;
     border-radius: 2rem;
     cursor: pointer;
-    // transition: 0.3s;
-    // &:hover, &:focus{
-    //     color: $secondaryColour;
-    //     background-color: $primaryColour;
-    // }
-    &.loginBtn, &.lookingBtn, &.saveJobBtn{
+    &.loginBtn, &.lookingBtn{
         border: 1px solid $secondaryColour;
         background-color: unset;
         &.lookingBtn{
@@ -31,11 +26,22 @@ button, .button{
             color: $quaternaryColour
         }
     }
+    transition: 0.3s;
+    &:hover, &:focus{
+        color: $quaternaryColour;
+        background-color: $secondaryColour;
+        border: 1px solid $quaternaryColour;
+    }
 }
 
 .saveJobBtn{
     padding: unset;
-    min-width: 35px;
+    background-color: unset;
+    color: $primaryColour;
+    font-size: 1rem;
+    &:hover, &:focus{
+        border: none;
+    }
 }
 
 .prevNextBtn{
