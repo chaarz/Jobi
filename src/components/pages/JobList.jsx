@@ -55,14 +55,24 @@ const JobList = () => {
                                             <div className='companyLogo'>
                                                 <img src={images.profile} alt="company logo" />
                                             </div>
-                                            <p>{job.title}</p>
+                                            <h4>{job.title}</h4>
                                         </div>
                                         <div className='jobCardType flex'>
-                                            <p>{job.contractType}</p>
+                                            <p
+                                                style={
+                                                    job.contractType === "Full Time"
+                                                        ? { color: "#008000" }
+                                                        : job.contractType === "Part Time"
+                                                            ? { color: "#ff0000" }
+                                                            : null
+                                                }
+                                            >
+                                                {job.contractType}
+                                            </p>
                                             <p>${job.salary.min}-${job.salary.max}</p>
                                         </div>
                                         <div className='jobCardDetails flex'>
-                                            <p>{job.location.city}, {job.location.country}</p>
+                                            <p className='jobLocation'>{job.location.city}, {job.location.country}</p>
                                             <p>{job.category}</p>
                                         </div>
                                         <div className='jobCardBtn'>

@@ -70,6 +70,13 @@ h3 {
     font-weight: 600;
 }
 
+h4{
+    font-family: $bodyFont;
+    font-size: clamp(.8rem, 4vw, 1rem);
+    letter-spacing: normal;
+    line-height: 1.6;
+}
+
 p {
     line-height: 1.9;
     @include largeMobile{
