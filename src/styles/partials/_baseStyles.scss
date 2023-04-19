@@ -34,6 +34,26 @@ button, .button{
     }
 }
 
+.aboutBtn{
+    padding: unset;
+    background-color: unset;
+    color: $primaryColour;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+        font-family: $headingFont;
+        font-size: clamp(0.8rem, 4vw, 1.2rem);
+        font-weight: unset;
+        line-height: 2.25;
+        color: #005025;
+        text-align: start;
+    }
+    &:hover, &:focus{
+        border: unset;
+    }
+}
+
 .saveJobBtn{
     padding: unset;
     background-color: unset;
@@ -52,6 +72,7 @@ button, .button{
     background-color: unset;
     transition: 0.3s;
     &:hover, &:focus{
+        border: unset;
         color: $secondaryColour;
         background-color: $quaternaryColour;
         font-size: 1rem;
@@ -89,7 +110,7 @@ a {
     text-decoration: none;
 }
 
-section, footer{
+section, footer, footer .upperFooter {
     padding: 3rem 0;
     @include tablet{
         padding: 2rem 0;

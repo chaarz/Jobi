@@ -232,6 +232,9 @@
         color: #005025;
         text-align: start;
     }
+    &:hover, &:focus{
+        border: unset;
+    }
 }
 
 .testimonials{
