@@ -54,7 +54,7 @@ const JobDetail = () => {
                 {jobDetails.responsibilities.map((resp) => {
                   return (
                     <li key={resp}>
-                      {resp}
+                      - {resp}
                     </li>
                   )
                 })}
@@ -66,7 +66,7 @@ const JobDetail = () => {
                 {jobDetails.requiredSkills.map((skill) => {
                   return (
                     <li key={skill}>
-                      {skill}
+                      - {skill}
                     </li>
                   )
                 })}
