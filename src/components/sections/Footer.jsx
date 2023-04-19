@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import images from '../images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
@@ -35,13 +36,13 @@ const Footer = () => {
                                     <Link to="/" className='highlight'>Pricing</Link>
                                 </li>
                                 <li>
-                                    <Link to="/" className='highlight'>About Us</Link>
+                                    <HashLink to="/#about" className='highlight'>About Us</HashLink>
                                 </li>
                                 <li>
                                     <Link to="/" className='highlight'>Careers</Link>
                                 </li>
                                 <li>
-                                    <Link to="/" className='highlight'>Blog</Link>
+                                    <HashLink to="/#blog" className='highlight'>Blog</HashLink>
                                 </li>
                             </ul>
                         </div>
@@ -61,10 +62,10 @@ const Footer = () => {
                                     <Link to="/" className='highlight'>Mobile</Link>
                                 </li>
                                 <li>
-                                    <Link to="/" className='highlight'>Collaboration</Link>
+                                    <HashLink to="/#collab" className='highlight'>Collaboration</HashLink>
                                 </li>
                                 <li>
-                                    <Link to="/" className='highlight'>Reviews</Link>
+                                    <HashLink to="/#reviews" className='highlight'>Reviews</HashLink>
                                 </li>
                             </ul>
                         </div>

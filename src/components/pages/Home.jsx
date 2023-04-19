@@ -2,6 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 import images from '../images';
 import Header from '../sections/Header';
 import About from '../sections/About';
+import Footer from '../sections/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
@@ -133,7 +134,7 @@ const Home = () => {
                     </div>
                 </section>
                 <About />
-                <section className='testimonials'>
+                <section className='testimonials' id='reviews'>
                     <div className='wrapper'>
                         <div className='sectionHeading'>
                             <h2>What our clients say about us</h2>
@@ -178,7 +179,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className='jobiGuides wrapper'>
+                <section className='jobiGuides wrapper' id='blog'>
                     <div className='sectionHeading'>
                         <h2>Jobi Guides</h2>
                         <Link to="/" className='highlight end'>
@@ -227,7 +228,7 @@ const Home = () => {
                         </li>
                     </ul>
                 </section>
-                <section className='collab about wrapper'>
+                <section className='collab about wrapper' id='collab'>
                     <div className='aboutImgContainer'>
                         <img src={images.collabImg} alt="" />
                     </div>
