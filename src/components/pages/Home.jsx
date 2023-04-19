@@ -2,7 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 import images from '../images';
 import Header from '../sections/Header';
 import About from '../sections/About';
-import Footer from '../sections/Footer';
+import ScrollToTop from '../../utils/ScrollToTop';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
@@ -245,6 +245,7 @@ const Home = () => {
                     </div>
                 </section>
             </main>
+            <ScrollToTop />
         </>
     )
 }

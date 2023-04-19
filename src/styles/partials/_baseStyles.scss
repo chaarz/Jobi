@@ -54,6 +54,15 @@ button, .button{
     }
 }
 
+.scrollToTopBtn{
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: .7;
+    padding: .25rem 1rem;
+}
+
 footer button{
         border-radius: 0.5rem;
         padding: .5rem;
