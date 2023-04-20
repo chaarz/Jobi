@@ -216,27 +216,6 @@
     }
 }
 
-
-.aboutBtn{
-    padding: unset;
-    background-color: unset;
-    color: $primaryColour;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3{
-        font-family: $headingFont;
-        font-size: clamp(0.8rem, 4vw, 1.2rem);
-        font-weight: unset;
-        line-height: 2.25;
-        color: #005025;
-        text-align: start;
-    }
-    &:hover, &:focus{
-        border: unset;
-    }
-}
-
 .testimonials{
     background-color: $grey;
     .sectionHeading{

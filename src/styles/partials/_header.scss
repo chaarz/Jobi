@@ -17,7 +17,7 @@ header{
         .headerTextContainer{
             width: 60%;
             @include desktop{
-                width: 70%;
+                width: 80%;
             }
             @include tabletLandscape{
                 width: 90%;
@@ -38,12 +38,13 @@ header{
     @include desktop{
         width: 90%;
     }
-    @include largeMobile{
+    @include tabletLandscape{
         width: 100%;
     }
     form{
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         @include laptop{
             flex-direction: column;
             gap: .5rem;
@@ -54,9 +55,7 @@ header{
             background-color: $secondaryColour;
             padding: 1rem 0;
             display: flex;
-            flex: 2;
             @include laptop{
-                justify-content: center;
                 padding: .75rem 0;
                 border-radius: .5rem;
             }
@@ -65,11 +64,12 @@ header{
                 gap: 1rem;
             }
             .searchForm{
+                width: 50%;
                 padding: 0 2rem;
                 display: flex;
                 flex-direction: column;
                 align-items:flex-start;
-                @include laptop{
+                @include tablet{
                     width: 100%;
                     padding: 0 1rem;
                 }
@@ -77,19 +77,24 @@ header{
                     padding: 0 .5rem;
                 }
                 input{
+                    width: 100%;
                     @include tablet{
                         align-self: stretch;
                     }
                 }
             }
             .category{
+                max-width: 50%;
                 padding-right: 1rem;
                 border-left: 1px solid $grey;
                 @include tablet{
                     border-left: unset;
+                    max-width: unset;
                 }
                 align-items: unset;
-                width: 100%;
+                select{
+                    overflow-x: scroll;
+                }
             }
         }
         button{
