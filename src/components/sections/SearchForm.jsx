@@ -4,6 +4,7 @@ const SearchForm = () => {
     const [catSelection, setCatSelection] = useState('');
 
     const categories = [
+        "All categories",
         "Accounting",
         "Account Management",
         "Administration and Office",
@@ -64,9 +65,8 @@ const SearchForm = () => {
                     </div>
                     <div className="searchForm category">
                         <label htmlFor="category">Category</label>
-                        <select name="category" id="category">
-                            <option value disabled selected>All categories</option>
-                            {/* <option value="webDevelopment">Web Development</option> */}
+                        <select name="category" id="category" defaultValue='All categories' >
+                            {/* <option disabled>All categories</option> */}
                             {
                                 categories.map( category => <option value={category} key={category}>{category}</option>)
                             }
