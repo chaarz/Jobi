@@ -31,8 +31,10 @@ import collabImg from '../assets/bubble-circle-icon.png';
 import headerImg from '../assets/people-taking-part-business-event.jpg';
 import howItWorksImg from '../assets/let-s-get-started.jpg';
 import testimonialsImg from '../assets/testimonials.jpg';
-import jobiGuides1 from '../assets/jobi-guides-1';
-import jobiGuides2 from '../assets/jobi-guides-2';
-import jobiGuides3 from '../assets/jobi-guides-3';
+import jobiGuides1 from '../assets/jobi-guides-1.jpg';
+import jobiGuides2 from '../assets/jobi-guides-2.jpg';
+import jobiGuides3 from '../assets/jobi-guides-3.jpg';
+import jobiGuides4 from '../assets/jobi-guides-4.jpg';
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall, collabImg, headerImg, howItWorksImg, testimonialsImg, jobiGuides1, jobiGuides2, jobiGuides3 };
+
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall, collabImg, headerImg, howItWorksImg, testimonialsImg, jobiGuides1, jobiGuides2, jobiGuides3, jobiGuides4 };

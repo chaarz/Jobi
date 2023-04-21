@@ -291,8 +291,8 @@
             flex-direction: column;
         }
         li{
-            width: calc((100%/3) - 2%);
-            margin: 1%;
+            width: calc((100%/3) - 4%);
+            margin: 2%;
             display: flex;
             flex-direction: column;
             @include tablet{
@@ -306,9 +306,9 @@
                 gap: unset;
             }
             .imgContainer{
-                max-width: 400px;
-                height: 310px;
-                background-color: $grey;
+                // max-width: 400px;
+                // height: 310px;
+                // background-color: $grey;
                 @include tablet{
                     width: 100%;
                     height: auto;

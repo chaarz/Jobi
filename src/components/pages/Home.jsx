@@ -189,7 +189,7 @@ const Home = () => {
                     <ul>
                         <li>
                             <div className='imgContainer'>
-                                <img src="" alt="" />
+                                <img src={images.jobiGuides1} alt="people with laptop" />
                             </div>
                             <div className='card'>
                                 <p className='date'>July 23, 2022</p>
@@ -202,7 +202,7 @@ const Home = () => {
                         </li>
                         <li>
                             <div className='imgContainer'>
-                                <img src="" alt="" />
+                                <img src={images.jobiGuides4} alt="People with laptop" />
                             </div>
                             <div className='card'>
                                 <p className='date'>July 23, 2022</p>
@@ -215,7 +215,7 @@ const Home = () => {
                         </li>
                         <li>
                             <div className='imgContainer'>
-                                <img src="" alt="" />
+                                <img src={images.jobiGuides3} alt="People with laptop" />
                             </div>
                             <div className='card'>
                                 <p className='date'>July 23, 2022</p>
