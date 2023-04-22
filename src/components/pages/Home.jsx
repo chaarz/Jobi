@@ -72,9 +72,11 @@ const Home = () => {
                         <h2>Trending Jobs</h2>
                         <div className='end'>
                             <button className='prevNextBtn'>
+                                <span className="sr-only">Previous</span>
                                 <FontAwesomeIcon icon={faArrowLeft} />
                             </button>
                             <button className='prevNextBtn'>
+                                <span className="sr-only">Next</span>
                                 <FontAwesomeIcon icon={faArrowRight} />
                             </button>
                         </div>
@@ -140,9 +142,11 @@ const Home = () => {
                             <h2>What our clients say about us</h2>
                             <div className='end'>
                                 <button className='prevNextBtn'>
+                                    <span className="sr-only">Previous</span>
                                     <FontAwesomeIcon icon={faArrowLeft} />
                                 </button>
                                 <button className='prevNextBtn'>
+                                    <span className="sr-only">Next</span>
                                     <FontAwesomeIcon icon={faArrowRight} />
                                 </button>
                             </div>
@@ -196,6 +200,7 @@ const Home = () => {
                                 <h3>Challenge yourself and win the future</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
                                 <Link to='/' className='highlight'>
+                                    <span className="sr-only">Read more here</span>
                                     <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
                                 </Link>
                             </div>
@@ -209,6 +214,7 @@ const Home = () => {
                                 <h3>Challenge yourself and win the future</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
                                 <Link to='/' className='highlight'>
+                                    <span className="sr-only">Read more here</span>
                                     <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
                                 </Link>
                             </div>
@@ -222,6 +228,7 @@ const Home = () => {
                                 <h3>Challenge yourself and win the future</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse?</p>
                                 <Link to='/' className='highlight'>
+                                    <span className="sr-only">Read more here</span>
                                     <FontAwesomeIcon icon={faArrowRightLong} className='icon' />
                                 </Link>
                             </div>
