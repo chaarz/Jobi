@@ -30,10 +30,12 @@ import collabImg from '../assets/bubble-circle-icon.png';
 import headerImg from '../assets/people-taking-part-business-event.jpg';
 import howItWorksImg from '../assets/let-s-get-started.jpg';
 import testimonialsImg from '../assets/testimonials.jpg';
-import jobiGuides1 from '../assets/jobi-guides-1.jpg';
+// import jobiGuides1 from '../assets/jobi-guides-1.jpg';
 import jobiGuides2 from '../assets/jobi-guides-2.jpg';
-import jobiGuides3 from '../assets/jobi-guides-3.jpg';
-import jobiGuides4 from '../assets/jobi-guides-4.jpg';
-
+// import jobiGuides3 from '../assets/jobi-guides-3.jpg';
+// import jobiGuides4 from '../assets/jobi-guides-4.jpg';
+import jobiGuides1 from '../assets/jobi-guides-1-small.jpg';
+import jobiGuides3 from '../assets/jobi-guides-3-small.jpg';
+import jobiGuides4 from '../assets/jobi-guides-4-small.jpg';
 
 export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, collabImg, headerImg, howItWorksImg, testimonialsImg, jobiGuides1, jobiGuides2, jobiGuides3, jobiGuides4 };
