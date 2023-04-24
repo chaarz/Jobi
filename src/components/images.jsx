@@ -12,11 +12,10 @@ import marketing from '../assets/marketing.png';
 import telemarketing from '../assets/telemarketing.png';
 import accounting from '../assets/accounting.png';
 import editing from '../assets/editing.png';
-import wordpressDevelopment from '../assets/wordpress-development.jpg';
-import productDevelopment from '../assets/product-development.jpg';
-import audioEditing from '../assets/audio-video-editing.jpg';
-import audioEditingSmall from '../assets/audio-video-editing-small.jpg';
-import customerSupport from '../assets/customer-support.jpg';
+import wordpressDevelopment from '../assets/wordpress-development-small.jpg';
+import productDevelopment from '../assets/product-development-small.jpg';
+import audioEditing from '../assets/audio-video-editing-small.jpg';
+import customerSupport from '../assets/customer-support-small.jpg';
 import backArrow from '../assets/back-arrow-icon-black.png';
 import nextArrow from '../assets/next-arrow-icon.png';
 import error404 from '../assets/error404.jpg';
@@ -37,4 +36,4 @@ import jobiGuides3 from '../assets/jobi-guides-3.jpg';
 import jobiGuides4 from '../assets/jobi-guides-4.jpg';
 
 
-export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, audioEditingSmall, collabImg, headerImg, howItWorksImg, testimonialsImg, jobiGuides1, jobiGuides2, jobiGuides3, jobiGuides4 };
+export default { jobiLogo, jobiLogoBlack, google, shipbob, dribbble, slack, vine, airbnb, uiuxdesign, development, marketing, telemarketing, accounting,editing, wordpressDevelopment, productDevelopment, audioEditing, customerSupport, backArrow, nextArrow, error404, profile, bookmark, videoPayBtn, account, apply, about, greyCircle, collabImg, headerImg, howItWorksImg, testimonialsImg, jobiGuides1, jobiGuides2, jobiGuides3, jobiGuides4 };

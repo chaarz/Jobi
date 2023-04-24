@@ -77,6 +77,7 @@ const JobList = () => {
                                         </div>
                                         <div className='jobCardBtn'>
                                             <button className='saveJobBtn highlight'>
+                                                <span className="sr-only">Bookmark job</span>
                                                 <FontAwesomeIcon icon={faBookmark} />
                                             </button>
                                             <button>APPLY</button>
