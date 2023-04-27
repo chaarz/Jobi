@@ -4,17 +4,26 @@
 .partners{
     background-color: $lightGrey;
     padding: 1rem 0;
-    ul{
+    .marquee-container{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        li{
-            width: calc(100%/6 - 4%);
-            @include tablet{
-                width: calc(100%/3 - 4%)
-            }
+        gap: 3rem;
+        overflow: hidden;
+        ul{
+            display: flex;
+            flex-shrink: 0;
+            gap: 3rem;
+            align-items: center;
+            animation: toLeft 20s linear infinite;
         }
+    }
+}
+
+@keyframes toLeft {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 3rem));
     }
 }
 
