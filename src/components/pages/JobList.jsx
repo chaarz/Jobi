@@ -98,12 +98,12 @@ const JobList = () => {
                         })}
                     </ul>
                     {popup ?
-                        // <div className='popup-background'>
+                        <div className='popup-background'>
                             <div className='popup-window'>
-                                <h3>You must be logged in to bookmark this job!</h3>
-                                <button onClick={() => {setPopup(false)}} type="button">OK</button>
+                                <p>You must be logged in to save this job!</p>
+                                <button onClick={() => {setPopup(false)}} type="button">ok</button>
                             </div>
-                        // </div>
+                        </div>
                         : ""}
                 </section>
             </main>
