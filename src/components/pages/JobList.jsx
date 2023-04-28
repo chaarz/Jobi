@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import images from '../images';
-import JobSamples from '../JobSamples';
+import images from '../../utils/images';
+import JobSamples from '../../utils/JobSamples';
 import { getDatabase, ref, onValue, push, set } from 'firebase/database';
 import firebase from '../firebase';
 import Header from '../sections/Header';
@@ -9,6 +9,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 
 const JobList = () => {
+    const [popup, setPopup] = useState(false);
+
+    const handleClickOpen = (event) => {
+        event.preventDefault();
+        setPopup(!popup);
+        console.log(popup);
+    }
+    // const handleClickClose = () => {
+    //     setPopup(false);
+    // }
+
     const [jobs, setJobs] = useState([]);
 
     const jobSample = JobSamples;
@@ -48,9 +59,8 @@ const JobList = () => {
                     <ul>
                         {jobs.map((job) => {
                             return (
-                                <Link to={`/jobList/${job.id}`}
-                                    key={job.id}>
-                                    <li>
+                                <li key={job.id}>
+                                    <Link to={`/jobList/${job.id}`}>
                                         <div className='jobTitle'>
                                             <div className='companyLogo'>
                                                 <img src={images.profile} alt="company logo" />
@@ -76,17 +86,25 @@ const JobList = () => {
                                             <p>{job.category}</p>
                                         </div>
                                         <div className='jobCardBtn'>
-                                            <button className='saveJobBtn highlight'>
+                                            <button onClick={handleClickOpen} className='saveJobBtn highlight'>
                                                 <span className="sr-only">Bookmark job</span>
                                                 <FontAwesomeIcon icon={faBookmark} />
                                             </button>
                                             <button>APPLY</button>
                                         </div>
-                                    </li>
-                                </Link>
+                                    </Link>
+                                </li>
                             )
                         })}
                     </ul>
+                    {popup ?
+                        // <div className='popup-background'>
+                            <div className='popup-window'>
+                                <h3>You must be logged in to bookmark this job!</h3>
+                                <button onClick={() => {setPopup(false)}} type="button">OK</button>
+                            </div>
+                        // </div>
+                        : ""}
                 </section>
             </main>
         </>
