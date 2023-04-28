@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutAccordion from '../../utils/AboutAccordion';
 import { Link } from 'react-router-dom';
-import images from '../images';
+import images from '../../utils/images';
 
 const About = () => {
 

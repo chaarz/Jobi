@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-import images from '../images';
+import images from '../../utils/images';
 import Header from '../sections/Header';
 import About from '../sections/About';
 import ScrollToTop from '../../utils/ScrollToTop';
@@ -58,7 +58,7 @@ const Home = () => {
                 <section className='categories wrapper'>
                     <div className='sectionHeading'>
                         <h2>Most in demand categories</h2>
-                        <Link to="/" className='highlight end'>
+                        <Link to="/jobList" className='highlight end'>
                             Explore all categories {'>'}
                         </Link>
                     </div>
@@ -143,7 +143,7 @@ const Home = () => {
                                     <img src={images.profile} alt="profile image" aria-hidden='true'/>
                                     <div className='cardText'>
                                         <p>Find talents or search for your dream job.</p>
-                                        <Link to='/'>APPLY OR HIRE</Link>
+                                        <Link to='/jobList'>APPLY OR HIRE</Link>
                                     </div>
                                 </li>
                                 <li>

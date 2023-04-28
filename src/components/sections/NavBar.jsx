@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import images from '../images';
+import images from '../../utils/images';
 
 const NavBar = () => {
     const [isActive, setIsActive] = useState(false)

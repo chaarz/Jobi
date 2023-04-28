@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import images from '../images';
+import images from '../../utils/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 
