@@ -57,12 +57,13 @@
 // 2. Hamburger button
 
 .hamButton {
-    background-color: unset;
+    background-color: transparent;
+    border: transparent;
     border-radius: unset;
-    padding: unset;
+    padding: 0;
     &:hover, &:focus{
-        border: unset;
-        background-color: unset;
+        border: transparent;
+        background-color: transparent;
     }
     display: flex;
     flex-direction: column;
