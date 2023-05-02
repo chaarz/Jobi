@@ -1,10 +1,18 @@
 @use 'variables' as *;
 @use 'mediaQueries' as *;
 
+.stickyNav{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: 40;
+}
+
 .navBar{
     padding: 2rem 3rem;
     @include laptop{
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
     display: flex;
     justify-content: space-between;
@@ -118,7 +126,7 @@
 // 5. Style the mobile navigation menu 
 
 .mobileNavContainer {
-    background-color: $tertiaryColour;
+    background-color: rgba(0, 0, 0, 0.95);
     position: fixed;
     top: 0;
     left: 0;

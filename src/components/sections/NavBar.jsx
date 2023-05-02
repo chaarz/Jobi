@@ -10,7 +10,7 @@ const NavBar = () => {
         setIsActive(!isActive);
     }
     return (
-        <>
+        <div className="stickyNav">
             <div className='navBar'>
                 <div className='logo'>
                     <img src={images.jobiLogo} alt="Jobi logo" />
@@ -71,7 +71,7 @@ const NavBar = () => {
                     </div>
                 </nav>
             </div>
-        </>
+        </div>
     )
 }
 
