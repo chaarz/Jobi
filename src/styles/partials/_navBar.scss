@@ -14,6 +14,9 @@
     @include laptop{
         padding: 2rem 1rem 1rem 1rem;
     }
+    @include largeMobile{
+        padding: 1rem;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +74,9 @@
     align-items: flex-end;
     position: fixed;
     top: 2.25rem;
+    @include largeMobile{
+        top: 1.25rem;
+    }
     right: 2rem;
     width: 40px;
     height: 40px;

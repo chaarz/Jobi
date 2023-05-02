@@ -14,6 +14,9 @@ header{
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        @include largeMobile{
+            gap: 1rem;
+        }
         .headerTextContainer{
             width: 60%;
             @include desktop{
@@ -26,6 +29,9 @@ header{
             flex-direction: column;
             align-items: center;
             gap: 2rem;
+            @include largeMobile{
+                gap: 1rem;
+            }
         }
     }
     p{
