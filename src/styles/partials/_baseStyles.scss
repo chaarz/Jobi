@@ -10,6 +10,60 @@
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    gap: 1.25rem;
+    .yellowCircle {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background: #EEFF2A;
+        position: relative;
+        top: .3rem;
+    }
+    .greenCircle {
+        width: 31px;
+        height: 31px;
+        background: rgb(0, 215, 73, .5);
+        border-radius: 50%;
+        position: absolute;
+        left: .75rem;
+        overflow: hidden;
+    }
+    span {
+        color: $secondaryColour;
+        font-size: 1.8rem;
+        letter-spacing: normal;
+    }
+}
+
+.logoBlack {
+    display: flex;
+    gap: 1.25rem;
+    .greenCircle {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        background: #00D749;
+        position: relative;
+        top: .3rem;
+    }
+    .yellowCircle {
+        width: 31px;
+        height: 31px;
+        background: rgb(238, 255, 42, .5);
+        border-radius: 50%;
+        position: absolute;
+        left: .75rem;
+        overflow: hidden;
+    }
+    span {
+        color: $primaryColour;
+        font-size: 1.8rem;
+        letter-spacing: normal;
+    }
+}
+
 button, .button{
     color: $secondaryColour;
     background-color: $quaternaryColour;

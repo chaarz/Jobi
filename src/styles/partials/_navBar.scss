@@ -1,7 +1,7 @@
 @use 'variables' as *;
 @use 'mediaQueries' as *;
 
-.stickyNav{
+.stickyNav {
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -9,37 +9,41 @@
     z-index: 40;
 }
 
-.navBar{
+.navBar {
     padding: 2rem 3rem;
-    @include laptop{
+    @include laptop {
         padding: 2rem 1rem 1rem 1rem;
     }
-    @include largeMobile{
-        padding: 1rem;
+    @include largeMobile {
+        padding: .5rem 1rem;
     }
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.desktopNav{
+.desktopNav {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    @include tabletLandscape{
+
+    @include tabletLandscape {
         display: none;
     }
-    ul{
+
+    ul {
         display: flex;
         align-items: center;
         gap: 1.5rem;
     }
-    .navButtons{
+
+    .navButtons {
         display: flex;
         justify-content: flex-end;
         gap: 0.5rem;
-        button{
-            @include laptop{
+
+        button {
+            @include laptop {
                 padding: .5rem;
             }
         }
@@ -52,7 +56,8 @@
 
 .hamButtonContainer {
     display: none;
-    @include tabletLandscape{
+
+    @include tabletLandscape {
         display: block;
     }
 }
@@ -64,23 +69,29 @@
     border: transparent;
     border-radius: unset;
     padding: 0;
-    &:hover, &:focus{
+
+    &:hover,
+    &:focus {
         border: transparent;
         background-color: transparent;
     }
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     position: fixed;
     top: 2.25rem;
-    @include largeMobile{
-        top: 1.25rem;
+
+    @include largeMobile {
+        top: .75rem;
     }
+
     right: 2rem;
     width: 40px;
     height: 40px;
     z-index: 40;
+
     span,
     span::before,
     span::after {
@@ -143,20 +154,25 @@
     // opacity: 0.95;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
-    .mobileNav{
+
+    .mobileNav {
         display: flex;
         flex-direction: column;
-        align-items:center;
-        .mobileNavLinks, .navButtons{
+        align-items: center;
+
+        .mobileNavLinks,
+        .navButtons {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1rem;
             margin-top: 30vh;
         }
-        .navButtons{
+
+        .navButtons {
             margin-top: 1rem;
-            button{
+
+            button {
                 width: 100%;
             }
         }

@@ -13,7 +13,11 @@ const NavBar = () => {
         <div className="stickyNav">
             <div className='navBar'>
                 <div className='logo'>
-                    <img src={images.jobiLogo} alt="Jobi logo" />
+                    {/* <img src={images.jobiLogo} alt="Jobi logo" /> */}
+                    <div className="yellowCircle">
+                        <div className="greenCircle"></div>
+                    </div>
+                    <span>jobi</span>
                 </div>
                 <nav className='desktopNav'>
                     <ul>

@@ -26,8 +26,12 @@ const Footer = () => {
             <div className='mainFooter wrapper'>
                 <div className='footerFlexContainer'>
                     <div className='footerMenu'>
-                        <div className='logo'>
-                            <img src={images.jobiLogoBlack} alt="Jobi logo" />
+                        <div className='logoBlack'>
+                            {/* <img src={images.jobiLogoBlack} alt="Jobi logo" /> */}
+                            <div className="greenCircle">
+                                <div className="yellowCircle"></div>
+                            </div>
+                            <span>jobi</span>
                         </div>
                         <div className='footerList'>
                             <h3>Links</h3>
