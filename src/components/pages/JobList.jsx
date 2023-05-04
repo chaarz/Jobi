@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 
 const JobList = () => {
+
+    // Popup window when bookmark icon is clicked
     const [popup, setPopup] = useState(false);
 
     const handleClickOpen = (event) => {
@@ -16,10 +18,8 @@ const JobList = () => {
         setPopup(!popup);
         console.log(popup);
     }
-    // const handleClickClose = () => {
-    //     setPopup(false);
-    // }
 
+    //display jobs from Firebase
     const [jobs, setJobs] = useState([]);
 
     const jobSample = JobSamples;
@@ -48,6 +48,17 @@ const JobList = () => {
             setJobs(arrayOfJobs);
         });
     }, [])
+
+    // Display salary in currency format
+    const toCurrency = (number) => {
+        const currency = new Intl.NumberFormat("en-CA", {
+            style: "currency", 
+            currency: "CAD", 
+            maximumFractionDigits: 0
+        });
+        return currency.format(number);
+    }
+
     return (
         <>
             <Header />
@@ -79,7 +90,7 @@ const JobList = () => {
                                             >
                                                 {job.contractType}
                                             </p>
-                                            <p>${job.salary.min}-${job.salary.max}</p>
+                                            <p>{toCurrency(job.salary.min)} - {toCurrency(job.salary.max)}</p>
                                         </div>
                                         <div className='jobCardDetails flex'>
                                             <p className='jobLocation'>{job.location.city}, {job.location.country}</p>
