@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import images from '../../utils/images';
 import JobSamples from '../../utils/JobSamples';
-import { getDatabase, ref, onValue, push, set } from 'firebase/database';
+import { getDatabase, ref, onValue, push, set, update } from 'firebase/database';
 import firebase from '../firebase';
 import Header from '../sections/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,25 +10,38 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 
 const JobList = () => {
 
-    // Popup window when bookmark icon is clicked
+    // Popup window opens when bookmark icon is clicked
     const [popup, setPopup] = useState(false);
 
     const handleClickOpen = (event) => {
         event.preventDefault();
         setPopup(!popup);
-        console.log(popup);
     }
 
     //display jobs from Firebase
     const [jobs, setJobs] = useState([]);
-
-    const jobSample = JobSamples;
 
     useEffect(() => {
 
         const database = getDatabase(firebase)
 
         const dbRef = ref(database, 'jobs/')
+
+        // // helper function to populate database with jobs
+        // const populateJobs = (job) => {
+
+        //     const newJobKey = push(dbRef).key
+
+        //     update(dbRef, { [newJobKey]: job })
+        //         .then(() => {
+        //             console.log('job has been added')
+        //         })
+        //         .catch((err) => {
+        //             console.log(err)
+        //         })
+        // }
+
+        // populateJobs(JobSamples);
 
         onValue(dbRef, (response) => {
 
@@ -52,8 +65,8 @@ const JobList = () => {
     // Display salary in currency format
     const toCurrency = (number) => {
         const currency = new Intl.NumberFormat("en-CA", {
-            style: "currency", 
-            currency: "CAD", 
+            style: "currency",
+            currency: "CAD",
             maximumFractionDigits: 0
         });
         return currency.format(number);
@@ -81,9 +94,9 @@ const JobList = () => {
                                         <div className='jobCardType flex'>
                                             <p
                                                 style={
-                                                    job.contractType === "Full Time"
+                                                    job.contractType === "Full-time"
                                                         ? { color: "#008000" }
-                                                        : job.contractType === "Part Time"
+                                                        : job.contractType === "Part-time"
                                                             ? { color: "#ff0000" }
                                                             : null
                                                 }
@@ -112,7 +125,7 @@ const JobList = () => {
                         <div className='popup-background'>
                             <div className='popup-window'>
                                 <p>You must be logged in to save this job!</p>
-                                <button onClick={() => {setPopup(false)}} type="button">ok</button>
+                                <button onClick={() => { setPopup(false) }} type="button">ok</button>
                             </div>
                         </div>
                         : ""}
