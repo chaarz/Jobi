@@ -12,13 +12,12 @@ const NavBar = () => {
     return (
         <div className="stickyNav">
             <div className='navBar'>
-                <div className='logo'>
-                    {/* <img src={images.jobiLogo} alt="Jobi logo" /> */}
+                <NavLink to="/" className='logo'>
                     <div className="yellowCircle">
                         <div className="greenCircle"></div>
                     </div>
                     <span>jobi</span>
-                </div>
+                </NavLink>
                 <nav className='desktopNav'>
                     <ul>
                         <li>
